@@ -74,7 +74,7 @@
 						<a href="#espectaculares">Espectaculares</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#contact">Contácto</a>
+						<a href="#contact">Contacto</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
@@ -107,6 +107,7 @@
 		</div>
 	</div><!-- Quienes somos -->
 	<!--Servicios -->
+    <section class="services">
 	<div class="content-section-b" id="servicios" style="border-top: 0">
 		<div class="container">
 			<div class="row">
@@ -117,19 +118,20 @@
 			<div class="row tworow">
 				<div class="col-sm-4 wow fadeInDown text-center">
 					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Fabricación de estructuras.</h3>
+					<h3>Fabricación de estructuras</h3>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
 					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Renta de espacios publicitarios.</h3>
+					<h3>Renta de espacios publicitarios</h3>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
 					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Producción, impresión y colocación de artes.</h3>
+					<h3>Producción, impresión y colocación de artes</h3>
 				</div>
 			</div>
 		</div>
-	</div><!-- Servicios -->
+	</div>
+    </section><!-- Servicios -->
 	<!-- Use it -->
 	<!-- Screenshot -->
 	<div class="content-section-b" id="espectaculares" style="border-top: 0">
@@ -139,75 +141,47 @@
 					<h2>Espectaculares</h2>
 				</div>
 			</div>
-			<main class="cd-main-content">
-				<div class="cd-tab-filter-wrapper">
-					<div class="cd-tab-filter">
-						<ul class="cd-filters">
-							<li class="placeholder">
-								<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-							</li>
-							<li class="filter">
-								<a class="selected" data-type="all" href="#0">All</a>
-							</li>
-							<li class="filter" data-filter=".color-1">
-								<a data-type="color-1" href="#0">Color 1</a>
-							</li>
-							<li class="filter" data-filter=".color-2">
-								<a data-type="color-2" href="#0">Color 2</a>
-							</li>
-						</ul><!-- cd-filters -->
-					</div><!-- cd-tab-filter -->
-				</div><!-- cd-tab-filter-wrapper -->
-				<section class="cd-gallery">
-					<ul>
-						<li class="mix color-1"><img alt="Image 1" src="img/img-1.jpg"></li>
-						<li class="mix color-2"><img alt="Image 2" src="img/img-2.jpg"></li>
-						<li class="mix color-1"><img alt="Image 3" src="img/img-3.jpg"></li>
-						<li class="mix color-1"><img alt="Image 4" src="img/img-4.jpg"></li>
-						<li class="mix color-1"><img alt="Image 5" src="img/img-5.jpg"></li>
-						<li class="mix color-2"><img alt="Image 6" src="img/img-6.jpg"></li>
-						<li class="mix color-2"><img alt="Image 7" src="img/img-7.jpg"></li>
-						<li class="mix color-1"><img alt="Image 8" src="img/img-8.jpg"></li>
-						<li class="mix color-2"><img alt="Image 9" src="img/img-9.jpg"></li>
-						<li class="mix color-1"><img alt="Image 10" src="img/img-10.jpg"></li>
-						<li class="gap"></li>
-						<li class="gap"></li>
-						<li class="gap"></li>
-					</ul>
-					<div class="cd-fail-message">
-						No results found
-					</div>
-				</section><!-- cd-gallery -->
-			</main><!-- cd-main-content -->
+                        <div class="row">
+                <div class="col-md-12">
+                 <div id="map" style="height:300px"></div>
+                        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6JxnmGozaKMfMVMo1HHd-toi87S--fc&callback=initMap"></script>
+                </div>    
+            </div>
+            <br>
+                        <div class="row">
+                <div class="col-xs-4 col-xs-offset-5">
+                    <button class="buttongaro">Ver más</button>
+                </div>
+            </div>
+			
 		</div>
 	</div><!-- Contact -->
 	<div class="content-section-a" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>Contact Us</h2>
-					<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+					<h2>Contacto</h2>
 				</div>
 				<form action="" method="post" role="form">
 					<div class="col-md-6">
 						<div class="form-group">
-							<label for="InputName">Your Name</label>
+							<label for="InputName">Nombre</label>
 							<div class="input-group">
 								<input class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="InputEmail">Your Email</label>
+							<label for="InputEmail">Tu email</label>
 							<div class="input-group">
 								<input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="InputMessage">Message</label>
+							<label for="InputMessage">Mensaje</label>
 							<div class="input-group">
 								<textarea class="form-control" id="InputMessage" name="InputMessage" required="" rows="5"></textarea> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 							</div>
-						</div><input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Submit">
+						</div><input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Manda un correo">
 					</div>
 				</form>
 				<hr class="featurette-divider hidden-lg">
@@ -267,7 +241,7 @@
 	</script> 
 	<script src="js/uiMorphingButton_inflow.js">
 	</script> <!-- Magnific Popup core JS file -->
-	 
+	<script src="js/maps.js"></script> 
 	<script src="js/jquery.magnific-popup.js">
 	</script>
 </body>

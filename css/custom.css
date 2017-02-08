@@ -346,23 +346,23 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 	padding: 0px 20px;
 	}
 	h1 {
-		font-size: 38px;
+		font-size: 38px !important;
 		margin: 20px 0;
 	}
 	h2 {
-		font-size: 24px;
+		font-size: 24px !important;
 	}
 	h3 {
-		font-size: 20px;
+		font-size: 20px !important;
 	}
 	h4 {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	h5 {
-		font-size: 13px;
+		font-size: 13px !important;
 	}
 	h6 {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 
 }
@@ -539,20 +539,52 @@ NO MORE TABLES!! ;)
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 568px) and (max-width: 1024px){
     .logogaro{
         width:40%;
+        margin-top: 5%;
     }
 }
 
-@media (max-width: 1024px){
+@media (min-width:1025px){
+    .logogaro{
+        width: 40%;   
+    }
+}
+
+@media (max-width: 567px){
     .logogaro{
         width:100%;
     }
 }
 
+.buttongaro {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #eb0028
+;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
+.buttongaro:hover {background-color: #eb0028}
 
+.buttongaro:active {
+  background-color: #eb0028;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
+.services{
+    background: #00a8e1;
+    color: aliceblue;
+}
 
 
