@@ -1,150 +1,309 @@
-<!-- FlatFy Theme - Andrea Galanti /-->
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html>
-<!--<![endif]-->
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-	<meta content="Flatfy Free Flat and Responsive HTML5 Template" name="description">
-	<meta content="" name="author">
-	<title>GARO</title><!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- Custom Google Web Font -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'><!-- Custom CSS-->
-	<link href="css/general.css" rel="stylesheet"><!-- Owl-Carousel -->
-	<link href="css/reset.css" rel="stylesheet"><!-- CSS reset -->
-	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	<script src="js/modernizr.js">
-	</script><!-- Modernizr -->
-	<!-- Magnific Popup core CSS file -->
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<script src="js/modernizr-2.8.3.min.js">
-	</script><!-- Modernizr /-->
-	<!--[if IE 9]>
-        <script src="js/PIE_IE9.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GARO</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<!--[if lt IE 9]>
-        <script src="js/PIE_IE678.js"></script>
-    <![endif]-->
-	<!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
+
 </head>
-<body id="home">
-	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status"></div>
-	</div><!-- FullScreen -->
-	<div class="intro-header">
-		<div class="col-xs-12 text-center abcen1"><img class="h1_home wow fadeIn logogaro" data-wow-delay="0.4s" src="img/Garo%20logotipo.svg"></div><!-- /.container -->
-		<div class="col-xs-12 text-center abcen wow fadeIn">
-			<div class="button_down">
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s" href="#whatis"><img alt="" class="img_scroll" src="img/icon/circle.png"></a>
-			</div>
-		</div>
-	</div><!-- NavBar-->
-<nav class="cd-stretchy-nav">
-		<a class="cd-nav-trigger" href="#0">
-			<span aria-hidden="true"></span>
-		</a>
 
-		<ul>
-			<li><a href="#somos" class="active"><span>Somos</span></a></li>
-            <li><a href="#servicios"><span>Servicios</span></a></li>
-			<li><a href="#espectaculares"><span>Espectaculares</span></a></li>
-			<li><a href="#contact"><span>Contacto</span></a></li>
-		</ul>
+<body>
 
-		<span aria-hidden="true" class="stretchy-nav-bg"></span>
-	</nav>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();><img src="img/nav_logo.svg" width="40%"></a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>Somos</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Servicios</a>
+            </li>
+            <li>
+                <a href="#espectaculares" onclick=$("#menu-close").click();>Espectaculares</a>
+            </li>
+            <li>
+                <a href="#clients" onclick=$("#menu-close").click();>Clientes</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contacto</a>
+            </li>
+        </ul>
+    </nav>
 
-	<div class="content-section-b" id="somos" style="border-top: 0">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>¿Quiénes somos?</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div>
-					<p class="text-center">GARO medios publicitarios es una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En GARO te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados.</p>
-				</div>
-			</div>
-			<div class="row tworow">
-				<div class="col-sm-6 wow fadeInDown text-center">
-					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Misión</h3>
-					<p class="lead">Mover tu marca en medios online y offline, ofreciéndote una asesoría personalizada y profesional para la producción de tu comunicación.</p>
-				</div>
-				<div class="col-sm-6 wow fadeInDown text-center">
-					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Visión</h3>
-					<p class="lead">Ser la opción número uno en Querétaro para la exposición de tu marca en medios exteriores y digitales, valiéndonos de nuestras ubicaciones estratégicas alrededor de la ciudad y de nuestro conocimiento en el desarrollo y la comercialización publicitaria.</p>
-				</div>
-			</div>
-		</div>
-	</div><!-- Quienes somos -->
-	<!--Servicios -->
-    <section class="services">
-	<div class="content-section-b" id="servicios" style="border-top: 0">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>Servicios</h2>
-				</div>
-			</div>
-			<div class="row tworow">
-				<div class="col-sm-4 wow fadeInDown text-center">
-					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Fabricación de estructuras</h3>
-				</div>
-				<div class="col-sm-4 wow fadeInDown text-center">
-					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Renta de espacios publicitarios</h3>
-				</div>
-				<div class="col-sm-4 wow fadeInDown text-center">
-					<img alt="Generic placeholder image" class="rotate" src="img/icon/laptop.svg">
-					<h3>Producción, impresión y colocación de artes</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-    </section><!-- Servicios -->
-	<!-- Use it -->
-	<!-- Screenshot -->
-	<div class="content-section-b" id="espectaculares" style="border-top: 0">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>Espectaculares</h2>
-				</div>
-			</div>
-                        <div class="row">
-                <div class="col-md-12">
-                 <div id="map" style="height:300px"></div>
-                        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6JxnmGozaKMfMVMo1HHd-toi87S--fc&callback=initMap"></script>
-                </div>    
-            </div>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <img src="img/Garo%20logotipo.svg" width="40%">
             <br>
-                        <div class="row">
-                <div class="col-xs-4 col-xs-offset-5">
-                    <button class="buttongaro">Ver más</button>
+            <a href="#about" class="btn btn-dark btn-lg">Conócenos</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>¿Quiénes somos?</h2>
+                    <p class="lead">GARO medios publicitarios es una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En GARO te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados. </p>
                 </div>
             </div>
-			
-		</div>
-	</div><!-- Contact -->
-	<div class="content-section-a" id="contact">
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Misión</strong>
+                                </h4>
+                                <p>Mover tu marca en medios online y offline, ofreciéndote una asesoría personalizada y profesional para la producción de tu comunicación.</p>
+                            </div>
+                </div>
+                 <div class="col-sm-6 text-center">
+                <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Visión</strong>
+                                </h4>
+                                <p>Ser la opción número uno en Querétaro para la exposición de tu marca en medios exteriores y digitales, valiéndonos de nuestras ubicaciones estratégicas alrededor de la ciudad y de nuestro conocimiento en el desarrollo y la comercialización publicitaria.</p>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Nuestros servicios</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Fabricación de estructuras</strong>
+                                </h4>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Renta de espacios publicitarios</strong>
+                                </h4>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Producción, impresión y colocación de artes</strong>
+                                </h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+
+
+    <!-- Map -->
+    <section id="espectaculares" class="mapa services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Nuestros espectaculares</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                <p class="lead">La publicidad exterior es el medio ideal para comunicar sus mensajes entre el movimiento constante de la ciudad. Contamos con 10 estructuras dobles de anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas. </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="map" style="width:100%; height:250px"></div>
+                    <script defer src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&callback=initMap"></script>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <a href="espectaculares.html"><button class="buttongaro">Ver más información</button></a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="clients" class="portfolio bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Nuestros clientes</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="row">
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="row">
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services">
+	<div class="content-section-a" id="contact ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
@@ -181,56 +340,116 @@
 						Phone: XXX-XXX-XXXX<br>
 						Fax: XXX-XXX-YYYY</p>
 					</address>
-					<h3>Social</h3>
-					<ul>
-						<li class="social">
-							<a href="#"><i class="fa fa-facebook-square fa-size"></i></a> <a href="#"><i class="fa fa-twitter-square fa-size"></i></a> <a href="#"><i class="fa fa-google-plus-square fa-size"></i></a> <a href="#"><i class="fa fa-flickr fa-size"></i></a>
-						</li>
-					</ul>
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer>
-		<div class="row">
-			<div class="col-md-12">
-				<!-- LICENSE -->
-				<p class="text-center">Copyright</p>
-			</div>
-		</div>
-	</footer><!-- JavaScript -->
-	<script src="js/jquery-2.1.1.js">
-	</script> 
-	<script src="js/jquery.mixitup.min.js">
-	</script> 
-	<script src="js/main.js">
-	</script> <!-- Resource jQuery -->
-	 
-	<script src="js/bootstrap.js">
-	</script> 
-	<script src="js/owl.carousel.js">
-	</script> 
-	<script src="js/script.js">
-	</script> <!-- StikyMenu -->
-	 
-	<script src="js/stickUp.min.js">
-	</script> 
-	<script type="text/javascript">
-	</script> <!-- Smoothscroll -->
-	 
-	<script src="js/jquery.corner.js" type="text/javascript">
-	</script> 
-	<script src="js/wow.min.js">
-	</script> 
-	<script>
-	    new WOW().init();
-	</script> 
-	<script src="js/classie.js">
-	</script> 
-	<script src="js/uiMorphingButton_inflow.js">
-	</script> <!-- Magnific Popup core JS file -->
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; GARO 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
 	<script src="js/maps.js"></script> 
-	<script src="js/jquery.magnific-popup.js">
-	</script>
+
 </body>
+
 </html>
