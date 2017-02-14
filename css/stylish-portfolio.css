@@ -73,7 +73,7 @@ hr.small {
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-    background: #222;
+    background: #fff;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -98,13 +98,13 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #ea002a;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #3857a7;
 }
 
 .sidebar-nav li a:active,
@@ -259,4 +259,116 @@ hr.small {
   background-color: #eb0028;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.marg{
+    margin-top: 20px;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .top20{
+        top: 20px;
+    }
+    .divtop20{
+        top:20%;
+    }
+    
+    .logoresponsivegaro{
+        width:40%
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+
+    .divtop20{
+        top:35%;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .hid{
+        display: none;
+    }
+    .logoresponsivegaro{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .hid{
+        display: none;
+    }
+    
 }
