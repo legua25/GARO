@@ -1,51 +1,48 @@
-function initMap() {
-  var myLatLng = {lat: 20.59111, lng: -100.39111};
-  var parqueqro2000 = {lat: 20.617167, lng:  -100.401361};
-  var parqueqro20002 = {lat: 20.617000, lng: -100.396500};
-  var cuotacelaya = {lat: 20.576806, lng: -100.408306};
-  var surponiente = {lat: 20.550194, lng: -100.374222};
-  var zaragoza = {lat: 20.580444, lng: -100.409778};
-  
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: myLatLng
-  });
 
-  var image = 'img/spectacular.png';
+const latlng = class {
     
-  var marker = new google.maps.Marker({
-    position: parqueqro2000,
-    map: map,
-    icon: image,  
-    title: 'Parque Querértaro'
-  });
+    constructor (lat, lng) {
+        this.lat = lat;
+        this.lng = lng;
+    }
     
-  var marker2 = new google.maps.Marker({
-    position: parqueqro20002,
-    map: map,
-    icon: image,
-    title: 'Parque Querétaro 2'
-  });
+};
+
+window.latlng = latlng;
+
+function initMap() {
     
-    var marker3 = new google.maps.Marker({
-    position: cuotacelaya,
-    map: map,
-    icon: image,
-    title: 'Carretera cuota Celaya'
-  });
+    const MARKER_ICON = 'img/spectacular.png';
+    const MAP = new google.maps.Map(document.querySelector('#map'), {
+        'zoom': 12, 
+        'center': new latlng(20.59111, -100.39111), 
+        'scrollwheel': false
+    });
+
+    function make_marker(ad, click) {
+
+        let marker = new google.maps.Marker({
+            'position': ad.location, 
+            'map': MAP, 
+            'icon': MARKER_ICON, 
+            'title': ad.title
+        });
+
+        if (click !== undefined)
+            marker.addListener('click', click);
+    }
+    window.make_marker = make_marker;
     
-    var marker4 = new google.maps.Marker({
-    position: surponiente,
-    map: map,
-    icon: image,
-    title: 'Libramiento surponiente'
-  });
-    
-    var marker5 = new google.maps.Marker({
-    position: zaragoza,
-    map: map,
-    icon: image,
-    title: 'Prolongación Zaragoza'
-  });
-    
+    make_marker({ 'title': 'Parque Querétaro', 'location': new latlng(20.617167, -100.401361) }, () => {
+        
+        let modal = $('#portfolioModal1');
+        console.log(modal);
+    });
+    make_marker({ 'title': 'Parque Querétaro 2', 'location': new latlng(20.617000, -100.396500) });
+    make_marker({ 'title': 'Carretera Celaya - Cuota', 'location': new latlng(20.576806, -100.408306) });
+    make_marker({ 'title': 'Libramiento Surponiente', 'location': new latlng(20.550194, -100.374222) });
+    make_marker({ 'title': 'Prolongación Zaragoza', 'location': new latlng(20.580444, -100.409778) });
+    make_marker({ 'title': 'Finsa', 'location': new latlng(20.5774648, -100.2009594) });
+    make_marker({ 'title': 'MexQro197', 'location': new latlng(20.56756, -100.2512922) });     
+    make_marker({ 'title': 'Colorado', 'location': new latlng(20.5661716, -100.2465773) });        
 }

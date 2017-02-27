@@ -1,463 +1,886 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>GARO</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/full-slider.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>GARO</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/full-slider.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/full-slider.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/stylish-portfolio.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/unslider.css">
+   
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!-- Navigation -->
+      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+      <nav id="sidebar-wrapper">
+         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();><img src="img/Garo%20logotipo.svg" width="40%"></a>
+               <a href="#top" onclick=$("#menu-close").click();><img src="img/Garo%20logotipo.svg" width="40%"></a>
             </li>
             <li>
-                <a href="#about" onclick=$("#menu-close").click(); class="marg">Somos</a>
+               <a href="#about" onclick=$("#menu-close").click(); class="marg">Somos</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Servicios</a>
+               <a href="#services" onclick=$("#menu-close").click();>Servicios</a>
             </li>
             <li>
-                <a href="#espectaculares" onclick=$("#menu-close").click();>Espectaculares</a>
+               <a href="#espectaculares" onclick=$("#menu-close").click();>Espectaculares</a>
             </li>
             <li>
-                <a href="#clients" onclick=$("#menu-close").click();>Clientes</a>
+               <a href="#clients" onclick=$("#menu-close").click();>Clientes</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contacto</a>
+               <a href="#contact" onclick=$("#menu-close").click();>Contacto</a>
             </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-    <div class="homepage-hero-module" style="height: 100%;">
-    <div class="video-container">
-        
-        <div class="title-container divtop20">
-                        <div class="text-vertical-center"><img src="img/Garo%20logotipo.svg" class="logoresponsivegaro"></div>
-        </div>
-        <video autoplay loop class="fillWidth hid" style="bottom: -200px">
-            <source src="media/demo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
-        <div class="poster hidden">
-            <img src="http://www.videojs.com/img/poster.jpg" alt="">
-        </div>
-    </div>
-</div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
+         </ul>
+      </nav>
+      <!-- Header -->
+      <header id="top" class="header">
+         <div class="homepage-hero-module" style="height: 100%;">
+            <div class="overlay"></div>
+            <div class="video-container">
+               <div class="title-container divtop20">
+                  <div class="text-vertical-center"><img src="img/Garo%20logotipo.svg" class="logoresponsivegaro"></div>
+               </div>
+               <video autoplay loop class="fillWidth hidden-sm hidden-xs vidbot">
+                  <source src="media/demo2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag. I suggest you upgrade your browser.
+               </video>
+               <div class="poster hidden">
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- About -->
+      <section id="about" class="about bg-primary">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>¿Quiénes somos?</h2>
-                    <p class="lead">GARO medios publicitarios es una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En GARO te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados. </p>
-                </div>
+               <div class="col-lg-12 text-center">
+                  <strong>
+                     <h2>20 años conquistando las calles</h2>
+                  </strong>
+                  <br>
+                  <hr class="small">
+                  <p class="lead">Somos una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En Garo te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados.</p>
+               </div>
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="img/cuadroazul.png" width="100%">
-                            </span>
-                                <h4>
-                                    <strong>Misión</strong>
-                                </h4>
-                                <p>Mover tu marca en medios online y offline, ofreciéndote una asesoría personalizada y profesional para la producción de tu comunicación.</p>
-                            </div>
-                </div>
-                 <div class="col-sm-6 text-center">
-                <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="img/cuadrorojo.png" width="100%">
-                            </span>
-                                <h4>
-                                    <strong>Visión</strong>
-                                </h4>
-                                <p>Ser la opción número uno en Querétaro para la exposición de tu marca en medios exteriores y digitales, valiéndonos de nuestras ubicaciones estratégicas alrededor de la ciudad y de nuestro conocimiento en el desarrollo y la comercialización publicitaria.</p>
-                            </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- Services -->
+      <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+      <section class="about">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h2 class="text-center">Anuncios espectaculares – el amor a múltiples vistas</h2>
+                  </div>
+               </div>
+               <br><br>
+               <div class="row">
+                  <div class="col-xs-12 text-center">
+                     <p class="lead">La publicidad exterior es el medio ideal para comunicar tus mensajes entre el movimiento constante de la ciudad. Contamos con anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+           <div class="row">
+            <div class="col-md-12">
+  
+               <br>
+               <!--<div class="row">
+                  <div class="col-md-8 col-md-offset-2">    
+                      <p class="text-center">Dependiendo de su ubicación, nuestros anuncios son clasificados de acuerdo al flujo vehicular del lugar en donde se encuentran, separándolos en las categorías AAA, AA, A. Te explicamos la diferencia entre cada una. 
+                      </p>
+                  </div>    
+                  </div>
+                  <br> -->
+
+               <div class="row text-center">
+                   
+                  <div class="col-md-8 col-md-offset-2">
+                                      <div class="col-md-4">
+                    <div class="service-item">
+                       <span class="fa-stack fa-4x">
+                       <img src="img/AAA.png" width="100%">
+                       </span><br><br>
+                       <p>Son aquellos anuncios ubicados en las vialidades principales y más transitadas de la ciudad, donde hay plazas y zonas comerciales.</p>
+                    </div>
+                </div>
+                                           <div class="col-md-4">
+                        <div class="service-item">
+                           <span class="fa-stack fa-4x">
+                           <img src="img/AA.png" width="100%">
+                           </span><br>
+                           <br>
+                           <p>Son los anuncios colocados en vías secundarias.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="service-item">
+                           <span class="fa-stack fa-4x">
+                           <img src="img/A.png" width=100%>
+                           </span><br>
+                           <br>
+                           <p>Son los anuncios colocados en las afueras de la ciudad.</p>
+                        </div>
+                     </div>
+
+
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <br>
+      <section>
+         <div class="row">
+            <div class="col-md-12">
+               <main class="cd-main-content">
+                  <div class="cd-tab-filter-wrapper">
+                     <div class="cd-tab-filter">
+                        <ul class="cd-filters">
+                           <li class="placeholder">
+                              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                           </li>
+                           <li class="filter"><a class="selected" href="#0" data-type="all">Todos</a></li>
+                           <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3" class="verd">AAA</a></li>
+                           <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" class="morad">AA</a></li>
+                           <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" class="amaril">A</a></li>
+                        </ul>
+                        <!-- cd-filters -->
+                     </div>
+                     <!-- cd-tab-filter -->
+                  </div>
+                  <!-- cd-tab-filter-wrapper -->
+                  <section class="cd-gallery">
+                     <ul>
+                        <a href="#portfolioModal1" data-toggle="modal">
+                           <li class="mix color-2 ad-overlay" style="display: inline-block;">
+                              <img src="img/Carretera%20cuota%20celaya%20natural.png" alt="Image 1">
+                              <div class="overAA" data-category="AA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal2" data-toggle="modal">
+                           <li class="mix color-1 ad-overlay" style="display: inline-block;">
+                              <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" alt="Image 2">
+                              <div class="overAA" data-category="A"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal3" data-toggle="modal">
+                           <li class="mix color-2 ad-overlay" style="display: inline-block;">
+                              <img src="img/Zaragoza%20cruzada.png" alt="Image 3">
+                              <div class="overAA" data-category="AA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal4" data-toggle="modal">
+                           <li class="mix color-3 ad-overlay" style="display: inline-block;">
+                              <img src="img/PQ2000%20natural%20pueblear.png" alt="Image 4">
+                              <div class="overAA" data-category="AAA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal5" data-toggle="modal">
+                           <li class="mix color-2 ad-overlay" style="display: inline-block;">
+                              <img src="img/LSP%20natural.png" alt="Image 5">
+                              <div class="overAA" data-category="AA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal6" data-toggle="modal">
+                           <li class="mix color-3 ad-overlay" style="display: inline-block;">
+                              <img src="img/alamos.png" alt="Image 6">
+                              <div class="overAA" data-category="AAA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal7" data-toggle="modal">
+                           <li class="mix color-3 ad-overlay" style="display: inline-block;">
+                              <img src="img/PQ2000/PQ2000%20natural.png" alt="Image 7">
+                              <div class="overAA" data-category="AAA"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal8" data-toggle="modal">
+                           <li class="mix color-1 ad-overlay" style="display: inline-block;">
+                              <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" alt="Image 8">
+                              <div class="overAA" data-category="A"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal9" data-toggle="modal">
+                           <li class="mix color-1 ad-overlay" style="display: inline-block;">
+                              <img src="img/El%20colorado%20natural.png" alt="Image 8">
+                              <div class="overAA" data-category="A"></div>
+                           </li>
+                        </a>
+                        <a href="#portfolioModal10" data-toggle="modal">
+                           <li class="mix color-1 ad-overlay" style="display: inline-block;">
+                              <img src="img/Aeropuerto%20natural.png" alt="Image 8">
+                              <div class="overAA" data-category="A"></div>
+                           </li>
+                        </a>                          
+                        <li class="gap"></li>
+                        <li class="gap"></li>
+                        <li class="gap"></li>
+            </ul>                    <div class="row">
+
+                   </div>
+                     <div class="cd-fail-message">Sin resultados</div>
+                  </section>
+                  <!-- cd-gallery -->
+               </main>
+
+            </div>
+         </div>
+      
+
+      </section>
+      <section id="services" class="services bg-secondary">
+         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Nuestros servicios</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="img/construccion.png" width=100%>
-                            </span>
-                                
-                                <h4 class="marg">
-                                    <strong>Fabricación de estructuras</strong>
-                                </h4>
-
-                            </div>
+               <div class="col-lg-10 col-lg-offset-1">
+                  <h2>Vendemos el abc de los anuncios espectaculares</h2>
+                  <hr class="small">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="service-item">
+                            <h2>A</h2><br>
+                           <span class="fa-stack fa-4x">
+                           <img src="img/construccion.png" width=100%>
+                           </span><br>
+                           <h4 class="marg">
+                              Fabricación de estructuras
+                           </h4>
                         </div>
-                        <div class="col-md-4">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="img/anuncio.png" width="100%">
-                            </span>
-                                <h4 class="marg">
-                                    <strong>Renta de espacios publicitarios</strong>
-                                </h4>
-
-                            </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="service-item">
+                            <h2>B</h2><br>
+                           <span class="fa-stack fa-4x">
+                           <img src="img/impresora.png" width="100%">
+                           </span><br>
+                           <h4 class="marg">
+                              Producción, impresión y colocación de artes
+                           </h4>
                         </div>
-                        <div class="col-md-4">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="img/impresora.png" width="100%">
-                            </span>
-                                <h4 class="marg">
-                                    <strong>Producción, impresión y colocación de artes</strong>
-                                </h4>
-
-                            </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="service-item">
+                            <h2>C</h2><br>
+                           <span class="fa-stack fa-4x">
+                           <img src="img/anuncio.png" width="100%">
+                           </span><br>
+                           <h4 class="marg">
+                              Renta de espacios publicitarios
+                           </h4><br>
+                           <p class="text-center"><strong>* El periodo mínimo de efectividad por contratación recomendado por Garo medios publicitarios es de 3 meses.</strong></p>
                         </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
+                     </div>
+                  </div>
+                  <!-- /.row (nested) -->
+               </div>
+               <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-    
-
-
-    <!-- Map -->
-    <section id="espectaculares" class="mapa services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Nuestros espectaculares</h2>
-                </div>
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- Map -->
+      <!-- Portfolio -->
+      <section id="clients" class="portfolio">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <h2>Nuestros espectaculares</h2>
+                        <br>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div id="map" style="width:100%; height:400px"></div>
+                        <script defer src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&callback=initMap"></script>
+                     </div>
+                  </div>
+                  <br>
+                  <br>
+               </div>
             </div>
+         </div>
+      </section>
+      <section id="espectaculares" class="mapa services bg-third">
+         <div class="container">
             <div class="row">
-                <div class="col-xs-12 text-center">
-                <p class="lead">La publicidad exterior es el medio ideal para comunicar sus mensajes entre el movimiento constante de la ciudad. Contamos con 10 estructuras dobles de anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas. </p>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="map" style="width:100%; height:250px"></div>
-                    <script defer src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&callback=initMap"></script>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <a href="espectaculares.html"><button class="buttongaro">Ver más información</button></a>
-                </div>
-            </div>
-            <br>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="clients" class="portfolio bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2>Nuestros clientes</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
+               <div class="col-xs-12 text-center">
+                  <h2>Nuestros clientes</h2>
+                  <hr class="small">
+                   <div class="my-slider">
+	<ul>
+		<li>
+                       <div class="col-md-3">
+                            <img src="img/logos/Bacardi.svg" width="60%">
                         </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
+                       <div class="col-md-3">
+                            <img src="img/logos/Holiday_Inn.svg" width="60%">
                         </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
+                       <div class="col-md-3">
+                            <img src="img/logos/itesmnew%20%5BConverted%5D.svg" width="60%">
                         </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
+                       <div class="col-md-3">
+                            <img src="img/logos/liverpool_logo.svg" width="60%">
+                        </div>                        
+                   </li>
+		<li>
+                       <div class="col-md-3">
+                            <img src="img/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg" width="60%">
                         </div>
-                    </div>
-                                        <div class="row">
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
+                       <div class="col-md-3">
+                            <img src="img/logos/palacio.svg" width="60%">
                         </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
+                       <div class="col-md-3">
+                            <img src="img/logos/peugeot_logo_2013.svg" width="60%">
                         </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="row">
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action -->
-    <section class="services">
-	<div class="content-section-a" id="contact ">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>Contacto</h2>
-				</div>
-				<form action="" method="post" role="form">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="InputName">Nombre</label>
-							<div class="input-group">
-								<input class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="InputEmail">Tu email</label>
-							<div class="input-group">
-								<input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="InputMessage">Mensaje</label>
-							<div class="input-group">
-								<textarea class="form-control" id="InputMessage" name="InputMessage" required="" rows="5"></textarea> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-							</div>
-						</div><input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Manda un correo">
-					</div>
-				</form>
-				<hr class="featurette-divider hidden-lg">
-				<div class="col-md-5 col-md-push-1 address">
-					<address>
-						<h3>Office Location</h3>
-						<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-						Washington, DC 20301</a><br>
-						Phone: XXX-XXX-XXXX<br>
-						Fax: XXX-XXX-YYYY</p>
-					</address>
-
-				</div>
-			</div>
-		</div>
-	</div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                       <div class="col-md-3">
+                            <img src="img/logos/Subway.svg" width="60%">
+                        </div>                        
+                  </li>
+	</ul>
+</div>
                     
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; GARO 2017</p>
-                </div>
+               </div>
+               <!-- /.col-lg-10 -->
             </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- Call to Action -->
+      <section class="services">
+         <div class="content-section-a" id="contact" >
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+                     <h2>Contacto</h2>
+                  </div>
+                  <form action="" method="post" role="form">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <label for="InputName">Nombre</label>
+                           <div class="input-group">
+                              <input class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="InputEmail">Tu email</label>
+                           <div class="input-group">
+                              <input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="InputMessage">Mensaje</label>
+                           <div class="input-group">
+                              <textarea class="form-control" id="InputMessage" name="InputMessage" required="" rows="5"></textarea> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                           </div>
+                        </div>
+                        <input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Manda un correo">
+                     </div>
+                  </form>
+                  <hr class="featurette-divider hidden-lg">
+                  <div class="col-md-5 col-md-push-1 address">
+                     <address>
+                        <h3>Nuestras Oficinas</h3>
+                        <p class="lead"><a href="https://www.google.com.mx/maps/place/Ciruelos+137,+Fracc.+Jurica,+Jurica+Pinar,+76100+Santiago+de+Quer%C3%A9taro,+Qro./@20.6628727,-100.4427459,17z/data=!3m1!4b1!4m5!3m4!1s0x85d350a0b329908d:0x5d3a8579bc95b0cb!8m2!3d20.6628727!4d-100.4405572">Ciruelos #137 Interior 18 El Pinar <br>
+                           Jurica, Querétaro, Qro. C.P. 76100</a><br>
+                           Tel: 442 183 1219
+                        </p>
+                     </address>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <ul class="list-inline">
+                     <li>
+                        <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                     </li>
+                  </ul>
+                  <hr class="small">
+                  <p class="text-muted">Copyright &copy; GARO 2017</p>
+               </div>
+            </div>
+         </div>
+         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+      </footer>
+       
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>                   
+               </div>
+                
+            </div>
+            <div class="row margentitulomodal"><h2>FINSA: Autopista México-Querétaro Km. 198 Parque Industrial Finsa RC</h2></div>                    
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/Carretera%20cuota%20celaya%20natural.png" width="100%" alt="Image 1">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/Carretera%20cuota%20Celaya%20cruzada.png" width="100%">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+                <div class="row margentitulomodal"><h2>Carretera Querétaro-México</h2></div>                    
+             
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/Carretera%20Quer%C3%A9taro%20natural%20.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="row margentitulomodal"><h2>Prolongación Zaragoza</h2></div>     
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/Zaragoza%20natural.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/Zaragoza%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <img src="img/Zaragoza%20natural%20noche.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <img src="img/Zaragoza%20cruzada%20noche.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Parque Querétaro 2000 INDEREQ</h2></div>
+                               
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-    </script>
-	<script src="js/maps.js"></script>
-    <script src="js/video.js"></script>
-<script>
-
-    </script>
-</body>
-
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/PQ2000%20natural%20pueblear.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/PQ2000%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <img src="img/PQ2000%20Natural%20noche.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <img src="img/PQ2000%20noche%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>             
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Libramiento Surponiente</h2></div>             
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/LSP%20natural.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/LSP%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Álamos</h2></div>                          
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/%C3%81lamos%20natural%202.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/alamos.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <h2>Natural</h2>
+                  <img src="img/%C3%81lamos%20natural%20noche.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h2>Cruzada</h2>
+                  <img src="img/%C3%81lamos%20cruzada%20noche.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <h3>Álamos</h3>
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Parque Querétaro 2000</h2></div>                               
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/PQ2000/PQ2000%20natural.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/PQ2000/PQ2000%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <img src="img/Natural%20noche.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <img src="img/PQ2000%20cruzada%20noche.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Autopista México-Querétaro Km. 197 La Piedad</h2></div>                                    
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+             <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Autopista México-Querétaro Km. 196 El Colorado</h2></div>     
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/El%20colorado%20natural.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/El%20colorado%20cruzada.png" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+             <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+             <div class="row margentitulomodal"><h2>Aeropuerto Intercontinental de Querétaro</h2></div>     
+            <div class="row">
+               <div class="col-lg-6">
+                  <h3>Natural</h3>
+                  <img src="img/Aeropuerto%20natural.png" width="100%">
+               </div>
+               <div class="col-lg-6">
+                  <h3>Cruzada</h3>
+                  <img src="img/MCC_3882.jpg" width="100%" alt="Image 1">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <br>
+                  <p class="rojo text-left">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+               </div>
+            </div>
+         </div>
+      </div>       
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script>
+         $(document).ready(() => {
+             
+             for (let [ name, color ] of [[ 'A', '#FF9E15' ], [ 'AA', '#804F9F' ], [ 'AAA', '#00946D' ]]) {
+                 $(`.ad-overlay:has([data-category="${name}"])`).css({ 'background-color': color });
+             }
+         });
+         
+         // Closes the sidebar menu
+         $("#menu-close").click(function(e) {
+             e.preventDefault();
+             $("#sidebar-wrapper").toggleClass("active");
+         });
+         // Opens the sidebar menu
+         $("#menu-toggle").click(function(e) {
+             e.preventDefault();
+             $("#sidebar-wrapper").toggleClass("active");
+         });
+         // Scrolls to the selected menu item on the page
+         $(function() {
+             $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                     var target = $(this.hash);
+                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                     if (target.length) {
+                         $('html,body').animate({
+                             scrollTop: target.offset().top
+                         }, 1000);
+                         return false;
+                     }
+                 }
+             });
+         });
+         //#to-top button appears after scrolling
+         var fixed = false;
+         $(document).scroll(function() {
+             if ($(this).scrollTop() > 250) {
+                 if (!fixed) {
+                     fixed = true;
+                     // $('#to-top').css({position:'fixed', display:'block'});
+                     $('#to-top').show("slow", function() {
+                         $('#to-top').css({
+                             position: 'fixed',
+                             display: 'block'
+                         });
+                     });
+                 }
+             } else {
+                 if (fixed) {
+                     fixed = false;
+                     $('#to-top').hide("slow", function() {
+                         $('#to-top').css({
+                             display: 'none'
+                         });
+                     });
+                 }
+             }
+         });
+      </script>
+       	<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider();
+		});
+	</script>
+       <script src="js/unslider.js"></script>
+      <script src="js/flickity-docs.min.js"></script> 
+      <script src="js/maps.js"></script>
+      <script src="js/video.js"></script>
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/jquery.mixitup.min.js"></script>
+      <script src="js/main.js"></script> <!-- Resource jQuery -->
+      <script  src="js/modals.js"></script>
+      <script></script>
+   </body>
 </html>

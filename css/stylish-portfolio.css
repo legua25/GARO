@@ -11,9 +11,22 @@ body {
     width: 100%;
     height: 100%;
 }
+@font-face{
+    font-family: Frutiger;
+    src: url(../fonts/FrutigerRoman.ttf);
+}
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Frutiger' !important;
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif !important;
+}
+
+.lead{
+        font-family: 'Didact Gothic', sans-serif !important;
+
 }
 
 .text-vertical-center {
@@ -66,7 +79,7 @@ hr.small {
 /* Side Menu */
 
 #sidebar-wrapper {
-    z-index: 1000;
+    z-index: 1010;
     position: fixed;
     right: 0;
     width: 250px;
@@ -128,7 +141,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 1009;
     position: fixed;
     top: 0;
     right: 0;
@@ -261,8 +274,13 @@ hr.small {
   transform: translateY(4px);
 }
 
+@font-face {
+    font-family: GothicBold;
+    src: url(../fonts/FrutigerLT.ttf);
+}
+
 h1,h2,h3,h4,h5,h6,h7{
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'GothicBold';
 }
 .marg{
     margin-top: 20px;
@@ -283,8 +301,6 @@ h1,h2,h3,h4,h5,h6,h7{
 }
 .video-container {
   position: relative;
-  bottom: 0%;
-  left: 0%;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -295,7 +311,6 @@ h1,h2,h3,h4,h5,h6,h7{
   position: absolute;
 }
 .video-container .filter {
-  z-index: 100;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -309,8 +324,7 @@ h1,h2,h3,h4,h5,h6,h7{
 }
 .video-container .description .inner {
   font-size: 1em;
-  width: 45%;
-  margin: 0 auto;
+  width: 100%;
 }
 .video-container .link {
   position: absolute;
@@ -333,7 +347,8 @@ h1,h2,h3,h4,h5,h6,h7{
   width: 100%;
 }
 
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (min-width: 640px) {
 
     .top20{
         top: 20px;
@@ -343,11 +358,11 @@ h1,h2,h3,h4,h5,h6,h7{
     }
     
     .logoresponsivegaro{
-        width:40%
+        width:35%;
     }
 }
 
-@media only screen and (max-width: 1169px) {
+@media only screen and (max-width: 1021px) {
 
     .divtop20{
         top:35%;
@@ -355,7 +370,7 @@ h1,h2,h3,h4,h5,h6,h7{
     
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1367px) {
 
     .hid{
         display: none;
@@ -371,4 +386,114 @@ h1,h2,h3,h4,h5,h6,h7{
         display: none;
     }
     
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 999;
+}
+
+@media only screen and (min-width:1440px){
+    .vidbot{
+        bottom:-150px !important;   
+    }
+}
+
+
+.bg-third{
+    color:white;
+    background-color: rgba(255,158,21,0.7);
+}
+
+.ad-overlay {
+  position: relative;
+}
+.ad-overlay img {
+  transition: opacity 0.33s ease;
+}
+.ad-overlay:hover img {
+  opacity: 0.65;
+}
+.ad-overlay:hover .overAA {
+  position: absolute;
+  top: calc(50% - 64px);
+  bottom: calc(50% - 64px);
+  left: calc(50% - 64px);
+  right: calc(50% - 64px);
+  width: 128px;
+  height: 128px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.ad-overlay:hover .overAA::before {
+  content: attr(data-category);
+  font-weight: bold;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: calc(50% - 20pt);
+  text-align: center;
+  font-size: 36pt;
+}
+
+.ad-overlay:has([data-category='A']) {
+  background-color: #FF9E15;
+}
+
+.ad-overlay:has([data-category='AA']) {
+  background-color: #804F9F;
+}
+
+.ad-overlay:has([data-category='AAA']) {
+  background-color: #00946D;
+}
+strong { 
+    font-weight: bold;
+}
+
+.mosaicos{
+    background-image: url(../img/Mosaico.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.logo
+{
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+   -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor:pointer;
+}
+
+
+.logo:hover
+{
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.verd:hover{
+    color: #00946d;
+}
+
+.morad:hover{
+    color:#804f9f;
+}
+.amaril:hover{
+    color:#ff9e15;
+}
+
+.margentitulomodal{
+    margin-bottom: 2%;
 }

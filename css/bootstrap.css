@@ -1310,7 +1310,7 @@ mark,
   background-color: #fcf8e3;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-right {
   text-align: right;
