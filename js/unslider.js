@@ -31,14 +31,14 @@
 			//  Should the slider move on its own or only when
 			//  you interact with the nav/arrows?
 			//  Only accepts boolean true/false.
-			autoplay: false,
+			autoplay: true,
 
 			//  3 second delay between slides moving, pass
 			//  as a number in milliseconds.
-			delay: 2000,
+			delay: 3000,
 
 			//  Animation speed in millseconds
-			speed: 750,
+			speed: 800,
 
 			//  An easing string to use. If you're using Velocity, use a
 			//  Velocity string otherwise you can use jQuery/jQ UI options.
