@@ -584,15 +584,9 @@ strong {
 	background-color: rgba(127, 114, 70, 0.16);
 }
 
-.video-responsive video {
-	display: inline-block;
-	min-height: 768px;
-	width: auto;
-}
-
 .hero-shot {
 	overflow-y: hidden;
-	max-height: 768px;
+	height: 768px;
 }
 
 .hero-shot .container-fluid, .hero-shot .container {
@@ -615,10 +609,17 @@ strong {
 	padding: 0 !important;
 }
 
-@media only screen and (min-width: 1365px) {
-	.video-responsive video {
-		display: inline-block;
-		height: auto;
+.video-responsive video {
+	display: inline-block;
+	min-height: 768px;
+	width: auto;
+}
+@media only screen and (min-width: 1362px) {
+	.video-responsive {
 		width: 100%;
+	}
+	.video-responsive video {
+		height: auto;
+		width: calc(100% + 2px);
 	}
 }
