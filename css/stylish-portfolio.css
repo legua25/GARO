@@ -20,7 +20,7 @@ header{
     position: relative;
     width:100%;
     height:100%;
-    background: url("../img/fondo.png");
+    background: url("../img/bg.jpg");
 }
 
 body {
@@ -56,43 +56,7 @@ p {
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
-.button {
-  border-radius: 4px;
-  background-color: #eb0028;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
@@ -116,7 +80,7 @@ p {
 /* Custom Horizontal Rule */
 
 hr.small {
-    max-width: 195px;
+    max-width: 100px;
 }
 
 /* Side Menu */
@@ -601,4 +565,60 @@ strong {
     .ipadresponsive{
         height: 90% !important;
     }    
+}
+.video-responsive {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.video-responsive::after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(127, 114, 70, 0.16);
+}
+
+.video-responsive video {
+	display: inline-block;
+	min-height: 768px;
+	width: auto;
+}
+
+.hero-shot {
+	overflow-y: hidden;
+	max-height: 768px;
+}
+
+.hero-shot .container-fluid, .hero-shot .container {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.flex-center {
+	display: inline-flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+@media only screen and (min-width: 1365px) {
+	.video-responsive video {
+		display: inline-block;
+		height: auto;
+		width: 100%;
+	}
 }
