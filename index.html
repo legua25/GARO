@@ -274,12 +274,12 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                <div class="col-lg-10 col-lg-offset-1">
                   <h2>Vendemos el abc de los anuncios espectaculares</h2>
                   <hr class="small">
-                  <div class="row">
+                  <div class="row" id="serviciostodos">
                      <div class="col-md-4">
                         <div class="service-item">
                             <h2>A</h2><br>
                            <span class="fa-stack fa-4x">
-                           <img src="img/construccion.png" width="100%">
+                               <a href="#services" onclick="toggler('construccion');"><img src="img/construccion.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Fabricación de estructuras
@@ -290,7 +290,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                         <div class="service-item">
                             <h2>B</h2><br>
                            <span class="fa-stack fa-4x">
-                           <img src="img/impresora.png" width="100%">
+                               <a href="#services" onclick="toggler2('impresion');"><img src="img/impresora.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Producción, impresión y colocación de artes
@@ -301,7 +301,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                         <div class="service-item">
                             <h2>C</h2><br>
                            <span class="fa-stack fa-4x">
-                           <img src="img/anuncio.png" width="100%">
+                           <a href="#filt"><img src="img/anuncio.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Renta de espacios publicitarios
@@ -310,14 +310,53 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                         </div>
                      </div>
                   </div>
-                   <div class="row">
+                   <div class="row" style="display: none;" id="construccion">
+                       <div class="row">
+                       <div class="col-md-4 col-md-offset-4">
+                        <div class="service-item">
+                            <h2>A</h2><br>
+                           <span class="fa-stack fa-4x">
+                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/construccion.png" width="100%"></a>
+                           </span><br>
+                           <h4 class="marg">
+                              Fabricación de estructuras
+                           </h4>
+                        </div>
+                     </div>
+                       </div>
+                        <div class="row">
                         <div class="col-md-4">
-                            
+                            <img src="img/Foto%201.png" width="100%">
                         </div>
                         <div class="col-md-4">
+                            <img src="img/Foto%202.png" width="100%">
                         </div>
                         <div class="col-md-4">
+                            <img src="img/Foto%204.png" width="100%">
                         </div>
+                       </div>   
+                       
+                   </div>
+                   <div class="row" style="display: none;" id="impresion">
+                       
+                    <div class="row">
+                     <div class="col-md-4 col-md-offset-4">
+                        <div class="service-item">
+                            <h2>B</h2><br>
+                           <span class="fa-stack fa-4x">
+                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/impresora.png" width="100%"></a>
+                           </span><br>
+                           <h4 class="marg">
+                              Producción, impresión y colocación de artes
+                           </h4>
+                        </div>
+                     </div>                    
+                    </div>
+                    <div class="row">
+                       <div class="col-md-4 col-md-offset-4">
+                            <img src="img/Impresion.png" width="100%">
+                        </div>
+                    </div>
                    </div>
                   <!-- /.row (nested) -->
                </div>
@@ -456,7 +495,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
       <footer>
          <div class="container">
             <div class="row">
-               <div class="col-lg-10 col-lg-offset-1 text-center">
+               <div class="col-xs-10 col-xs-offset-1 text-center">
                   <ul class="list-inline">
                      <li>
                         <a href="#"><img src="img/logos/facebu.svg" width="30%"></a>
@@ -913,13 +952,33 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
              }
          });
       </script>
+       <script>
+        function toggler(divId) {
+            $("#" + divId).toggle();
+            $("#" + divId).removeClass("hidden");     
+            document.getElementById("serviciostodos").className = "hidden";
+            document.getElementById("impresion").className = "hidden";
+        }
+        function toggler2(divId) {
+            $("#" + divId).toggle();
+            $("#" + divId).removeClass("hidden"); 
+            document.getElementById("serviciostodos").className = "hidden";
+            document.getElementById("construccion").className = "hidden";
+        }
+        function togglerback(divId) {
+            $("#" + divId).toggle();
+            $("#" + divId).removeClass("hidden");            
+            document.getElementById("impresion").className = "hidden";
+            document.getElementById("construccion").className = "hidden";
+        }
+       </script>
       <script>
 		jQuery(document).ready(function($) {
 			$('.my-slider').unslider();
 		});
       </script>
       <script src="js/unslider.js"></script>
-      <script src="js/video.js"></script>
+      <script src="js/video.js"></script>   
       <script src="js/modals.js"></script>
       <script></script>
    
