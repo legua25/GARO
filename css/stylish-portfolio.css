@@ -25,7 +25,7 @@ header{
 
 @media only screen and (min-width: 500px){
     header{
-        background: url(../img/LSP%20natural.png) no-repeat center center scroll;
+        background: url(../img/fondopc.png) no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;

@@ -13,6 +13,7 @@ function initMap() {
   var colorado = {lat:20.5661716, lng:-100.2465773};
   var aeropuertoalv = {lat:20.6068538, lng:-100.1467389};
   var centroperro = { lat: 20.5923748, lng:-100.2832912 };
+  var carmen = { lat:20.571844, lng: -100.2728297};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: centroperro,
@@ -30,46 +31,46 @@ function initMap() {
     position: indereq,
     map: map,
     icon: "img/spectacular.png",          
-    title: 'Alamos'
+    title: 'INDEREQ'
   });
       var marker3 = new google.maps.Marker({
     position: indereq2,
     map: map,
     icon: "img/spectacular.png",          
-    title: 'Alamos'
+    title: 'INDEREQ2'
   });
       var marker4 = new google.maps.Marker({
     position: celayacuota,
     map: map,
-    title: 'Alamos',
+    title: 'Celaya Cuota',
     icon: "img/spectacular.png"
           
   });
       var marker5 = new google.maps.Marker({
     position: surponiente,
     map: map,
-    title: 'Alamos',
+    title: 'Surponiente',
     icon: "img/spectacular.png"
           
   });
       var marker6 = new google.maps.Marker({
     position: zaragoza,
     map: map,
-    title: 'Alamos',
+    title: 'Zaragoza',
     icon: "img/spectacular.png"
           
   });
       var marker7 = new google.maps.Marker({
     position: finsa,
     map: map,
-    title: 'Alamos',
+    title: 'FINSA',
     icon: "img/spectacular.png"
           
   });
       var marker8 = new google.maps.Marker({
     position: mexqro,
     map: map,
-    title: 'Alamos',
+    title: 'Carretera MexQro',
     icon: "img/spectacular.png"
           
   });
@@ -77,19 +78,24 @@ function initMap() {
       var marker9 = new google.maps.Marker({
     position: colorado,
     map: map,
-    title: 'Alamos',
+    title: 'El Colorado',
     icon: "img/spectacular.png"
           
   });
       var marker10 = new google.maps.Marker({
     position: aeropuertoalv,
     map: map,
-    title: 'Alamos',
+    title: 'Aeropuerto',
     icon: "img/spectacular.png"
           
   });    
     
-    
+    var marker11 = new google.maps.Marker({
+    position: carmen,
+    map: map,
+    title: 'Carmen',
+    icon: "img/spectacular.png"        
+    });
     
     
   marker.addListener('click', function() {
@@ -125,21 +131,8 @@ function initMap() {
   marker10.addListener('click', function() {
     $("#portfolioModal10").modal();
   });    
+  marker11.addListener('click', function() {
+    $("#portfolioModal11").modal();
+  });        
     
 }
-
-/*
-    let mark7 = make_marker({ 'title': 'Parque Querétaro', 'location': new latlng(20.617167, -100.401361) }, () => {
-        
-        console.log('here');
-        console.log($('a#modal-1'));
-        $('a#modal-1').trigger('click');
-    });
-    let mark8= make_marker({ 'title': 'Parque Querétaro 2', 'location': new latlng(20.617000, -100.396500) }, () => {
-    });
-    let mark1 = make_marker({ 'title': 'Carretera Celaya - Cuota', 'location': new latlng(20.576806, -100.408306) });
-    let mark2 = make_marker({ 'title': 'Libramiento Surponiente', 'location': new latlng(20.550194, -100.374222) });
-    let mark3 = make_marker({ 'title': 'Prolongación Zaragoza', 'location': new latlng(20.580444, -100.409778) });
-    let mark4 = make_marker({ 'title': 'Finsa', 'location': new latlng(20.5774648, -100.2009594) });
-    let mark5 = make_marker({ 'title': 'MexQro197', 'location': new latlng(20.56756, -100.2512922) });     
-    let mark6 = make_marker({ 'title': 'Colorado', 'location': new latlng(20.5661716, -100.2465773) }); */
