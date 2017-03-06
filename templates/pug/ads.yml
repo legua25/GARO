@@ -1,0 +1,177 @@
+# Advertisement list
+ads:
+
+    - title: Carretera Querétaro-Celaya
+      category: aa
+      tumbnail: '/static/images/Carretera%20cuota%20celaya%20natural.png'
+      pictures:
+        - '/static/images/Carretera%20cuota%20celaya%20natural.png'
+        - '/static/images/Carretera%20cuota%20Celaya%20cruzada.png'
+      description: |
+        - Vista natural: 800m de distancia.<br />
+        - Vista cruzada: 600m de distancia.<br />
+        <strong>Frente a Plaza Esfera y Plaza Galerías</strong>
+      location:
+        lat: 20.576806
+        ln: -100.408306
+        url: "https://www.google.com.mx/maps/place/20%C2%B034'36.5%22N+100%C2%B024'29.9%22W/@20.5768056,-100.4104943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5768056!4d-100.40830562"
+    
+    - title: Autopista México-Querétaro Km. 198 Parque Industrial Finsa RC
+      category: a
+      tumbnail: '/static/img/Carretera%20Quer%C3%A9taro%20cruzada%20.png'
+      pictures:
+        - '/static/img/Carretera%20Quer%C3%A9taro%20natural%20.png'
+        - '/static/img/Carretera%20Quer%C3%A9taro%20cruzada%20.png'
+      description: |
+        - Vista natural: 700m de distancia.<br />
+        - Vista cruzada: 700m de distancia.<br />
+        <strong>*Dentro de Parque Industrial Finsa</strong>
+      location:
+        lat: 20.5774648
+        ln: -100.2009594
+        url: "https://www.google.com.mx/maps/place/Parque+Finsa+II/@20.5300032,-100.2951428,11z/data=!4m8!1m2!2m1!1sParque+Industrial+Finsa+Quer%C3%A9taro!3m4!1s0x0:0x588e231b0ebaebe!8m2!3d20.5773899!4d-100.2008915?hl=es-419"
+        
+    - title: Prolongación Zaragoza
+      category: aa
+      tumbnail: '/static/img/Zaragoza%20cruzada.png'
+      pictures:
+        - '/static/img/Zaragoza%20natural.png'
+        - '/static/img/Zaragoza%20cruzada.png'
+        - '/static/img/Zaragoza%20natural%20noche.png'
+        - '/static/img/Zaragoza%20cruzada%20noche.png'
+      description: |
+        - Vista natural: 900m de distancia.<br />
+        - Vista cruzada: 500m en semáforo.<br />
+        <strong>*Cerca del IMSS, Farmacias del Ahorro y escuelas.</strong>
+      location:
+        lat: 20.580444
+        ln: -100.409778
+        url: "https://www.google.com.mx/maps/place/20%C2%B034'49.6%22N+100%C2%B024'35.2%22W/@20.5804444,-100.4119665,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5804444!4d-100.4097778"
+        
+    - title: Parque Querétaro 2000 INDEREQ
+      category: aaa
+      tumbnail: '/static/img/PQ2000%20natural%20pueblear.png'
+      pictures:
+        - '/static/img/PQ2000%20natural%20pueblear.png'
+        - '/static/img/PQ2000%20cruzada.png'
+        - '/static/img/PQ2000%20Natural%20noche.png'
+        - '/static/img/PQ2000%20noche%20cruzada.png'
+      description: |
+        - Vista natural: 600m de distancia.<br />
+        - Vista cruzada: 400m en distancia.<br />
+        <strong>*Frente a zona comercial (SAM’S, Wallmart, Vips, Costco)</strong>
+      location:
+        lat: 20.617000
+        ln: -100.396500
+        url: "https://www.google.com.mx/maps?q=20%C2%B037%2701.2%22N+100%C2%B023%2747.4%22W&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjSj_7XlrTSAhVFSyYKHcdeCPYQ_AUICCgB"        
+        
+    - title: Libramiento Surponiente
+      category: aa
+      tumbnail: '/static/img/LSP%20natural.png'
+      pictures:
+        - '/static/img/LSP%20natural.png'
+        - '/static/img/LSP%20cruzada.png'
+      description: |
+        - Vista natural: 1km. de distancia.<br />
+        - Vista cruzada: 1km. en distancia.<br />
+        <strong>*Rodeado de desarrollos inmobiliarios</strong>
+      location:
+        lat: 20.550194
+        ln: -100.374222
+        url: "https://www.google.com.mx/maps/place/20%C2%B033'00.7%22N+100%C2%B022'27.2%22W/@20.5501944,-100.3764109,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5501944!4d-100.3742222"
+
+    - title: Álamos
+      category: aaa
+      tumbnail: '/static/img/alamos.png'
+      pictures:
+        - '/static/img/%C3%81lamos%20natural%202.png'
+        - '/static/img/alamos.png'
+        - '/static/img/%C3%81lamos%20natural%20noche.png'
+        - '/static/img/%C3%81lamos%20cruzada%20noche.png'
+      description: |
+        - Vista natural: 600m. de distancia.<br />
+        - Vista cruzada: 400m. en distancia.<br />
+        <strong>*Frente a Plaza Boulevares, restaurante Nico’s y agencias automotrices.</strong>
+      location:
+        lat: 20.6114998
+        ln: -100.3849255
+        url: "https://www.google.com.mx/maps/place/Lib.+Nte.+de+Quer%C3%A9taro,+Santiago+de+Quer%C3%A9taro,+Qro./@20.6114998,-100.3849255,17z/data=!3m1!4b1!4m5!3m4!1s0x85d35a8e2799ce27:0xe39c182a9d55262!8m2!3d20.6114948!4d-100.3827368?hl=es-419&shorturl=1"
+        
+    - title: Parque Querétaro 2000
+      category: aaa
+      tumbnail: '/static/img/PQ2000/PQ2000%20natural.png'
+      pictures:
+        - '/static/img/PQ2000/PQ2000%20natural.png'
+        - '/static/img/PQ2000/PQ2000%20cruzada.png'
+        - '/static/img/Natural%20noche.png'
+        - '/static/img/PQ2000%20cruzada%20noche.png'
+      description: |
+        - Vista natural: 900m. de distancia.<br />
+        - Vista cruzada: 300m. en distancia.<br />
+        <strong>*Frente a Plaza del Parque y hotel Fiesta Americana.</strong>
+      location:
+        lat: 20.617167
+        ln: -100.401361
+        url: "https://www.google.com.mx/maps/place/20%C2%B037'01.8%22N+100%C2%B024'04.9%22W/@20.6171667,-100.4035498,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.6171667!4d-100.4013611"
+        
+    - title: Autopista México-Querétaro Km. 197 La Piedad
+      category: a
+      tumbnail: '/static/img/Carretera%20Quer%C3%A9taro%202%20natural%20.png'
+      pictures:
+        - '/static/img/Carretera%20Quer%C3%A9taro%202%20natural%20.png'
+        - '/static/img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png'
+      description: |
+        - Vista natural: 700m. de distancia.<br />
+        - Vista cruzada: 700m. en distancia.<br />
+        <strong>*Cerca de desarrollos inmobiiarios.</strong>
+      location:
+        lat: 20.56756
+        ln: -100.2512922
+        url: "https://www.google.com.mx/maps/place/Carr.+M%C3%A9xico-+Quer%C3%A9taro+197,+Parque+del+Cimatario,+Qro./@20.567565,-100.2518301,17z/data=!3m1!4b1!4m5!3m4!1s0x85d36824a48f36ef:0x57fe1657e49c6f05!8m2!3d20.56756!4d-100.2496414?hl=es-419&shorturl=1"
+        
+    - title: Autopista México-Querétaro Km. 196 El Colorado
+      category: a
+      tumbnail: '/static/img/El%20colorado%20natural.png'
+      pictures:
+        - '/static/img/El%20colorado%20natural.png'
+        - '/static/img/El%20colorado%20cruzada.png'
+      description: |
+        - Vista natural: 500m. de distancia.<br />
+        - Vista cruzada: 1km. en distancia.<br />
+        <strong>*Frente a Parque Industrial El Marqués</strong>
+      location:
+        lat: 20.5661716
+        ln: -100.2465773
+        url: "https://www.google.com.mx/maps/place/El+muelle+del+Colorado./@20.5654009,-100.2461702,18z/data=!4m13!1m7!3m6!1s0x85d35a766a8ce837:0xe6bf10f2cc7c7d85!2sCarr.+M%C3%A9xico-+Quer%C3%A9taro,+El+Colorado,+San+Miguel+la+Piedad,+Qro.!3b1!8m2!3d20.564429!4d-100.2435524!3m4!1s0x0:0x2ea2e26191da4d2a!8m2!3d20.5661147!4d-100.2465641?hl=es-419&shorturl=1"                
+        
+    - title: Aeropuerto Intercontinental de Querétaro
+      category: a
+      tumbnail: '/static/img/Aeropuerto%20natural.png'
+      pictures:
+        - '/static/img/MCC_3882.png'
+        - '/static/img/Aeropuerto%20natural.png'
+      description: |
+        - Vista natural: 600m. de distancia.<br />
+        - Vista cruzada: 300m. en distancia.<br />
+        <strong>*A un lado del Aeropuerto Intercontinental de Querétaro.</strong>
+      location:
+        lat: 20.6068538
+        ln: -100.1467389
+        url: "https://www.google.com.mx/maps/place/Carr.+Quer%C3%A9taro-Tequisquiapan,+Coyote,+Qro./@20.6366114,-100.2602881,12z/data=!4m5!3m4!1s0x85d35d7d8b141bc5:0x84e47e3dd585f135!8m2!3d20.6066975!4d-100.1465255?hl=es-419&shorturl=1"
+        
+    - title: Autopista México-Querétaro Km. 197.5 El Carmen
+      category: a
+      tumbnail: '/static/img/El%20Carmen%20cruzada.png'
+      pictures:
+        - '/static/img/El%20carmen%20natural%202.png'
+        - '/static/img/El%20Carmen%20cruzada.png'
+      description: |
+        - Vista natural: 400m. de distancia.<br />
+        - Vista cruzada: 800m. en distancia.<br />
+        <strong>*Frente a Parque Industrial Bernardo Quintana.</strong>
+      location:
+        lat: 20.571844
+        ln: -100.2728297
+        url: "https://www.google.com.mx/maps/place/Pedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro./@20.5717373,-100.27276,20z/data=!4m13!1m7!3m6!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!2sPedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro.!3b1!8m2!3d20.571731!4d-100.2725481!3m4!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!8m2!3d20.571731!4d-100.2725481?hl=es-419"
+
+
