@@ -24,54 +24,54 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: alamos,
     map: map,
-    icon: "img/spectacular.png",
+    icon: "../../server/static/img/spectacular.png",
     title: 'Alamos'
   });
       var marker2 = new google.maps.Marker({
     position: indereq,
     map: map,
-    icon: "img/spectacular.png",          
+    icon: "../../server/static/img/spectacular.png",          
     title: 'INDEREQ'
   });
       var marker3 = new google.maps.Marker({
     position: indereq2,
     map: map,
-    icon: "img/spectacular.png",          
+    icon: "../../server/static/img/spectacular.png",          
     title: 'INDEREQ2'
   });
       var marker4 = new google.maps.Marker({
     position: celayacuota,
     map: map,
     title: 'Celaya Cuota',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
       var marker5 = new google.maps.Marker({
     position: surponiente,
     map: map,
     title: 'Surponiente',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
       var marker6 = new google.maps.Marker({
     position: zaragoza,
     map: map,
     title: 'Zaragoza',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
       var marker7 = new google.maps.Marker({
     position: finsa,
     map: map,
     title: 'FINSA',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
       var marker8 = new google.maps.Marker({
     position: mexqro,
     map: map,
     title: 'Carretera MexQro',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
     
@@ -79,14 +79,14 @@ function initMap() {
     position: colorado,
     map: map,
     title: 'El Colorado',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });
       var marker10 = new google.maps.Marker({
     position: aeropuertoalv,
     map: map,
     title: 'Aeropuerto',
-    icon: "img/spectacular.png"
+    icon: "../../server/static/img/spectacular.png"
           
   });    
     
@@ -94,7 +94,7 @@ function initMap() {
     position: carmen,
     map: map,
     title: 'Carmen',
-    icon: "img/spectacular.png"        
+    icon: "../../server/static/img/spectacular.png"        
     });
     
     

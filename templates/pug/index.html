@@ -15,27 +15,20 @@ var AG_removeElementBySelector = function(selector) { if (!document.querySelecto
 var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
 var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
 } catch (ex) { console.error('Error executing AG js: ' + ex); }</script>
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/full-slider.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/reset.css" rel="stylesheet">
-      <link href="css/full-slider.css" rel="stylesheet">
+      <link href="../../server/static/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../server/static/css/full-slider.css" rel="stylesheet">
+      <link href="../../server/static/css/style.css" rel="stylesheet">
+      <link href="../../server/static/css/reset.css" rel="stylesheet">
+      <link href="../../server/static/css/full-slider.css" rel="stylesheet">
     
       <!-- Custom CSS -->
-      <link href="css/stylish-portfolio.css" rel="stylesheet">
+      <link href="../../server/static/css/stylish-portfolio.css" rel="stylesheet">
       <!-- Custom Fonts -->
-      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="../../server/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/unslider.css">
-       <script src="js/jquery.js"></script>
-        <script src="js/jquery-2.1.1.js"></script>              
-      <script src="js/jquery.mixitup.min.js"></script> 
-          
-      <script src="js/bootstrap.min.js"></script>
-        <script src="js/maps.js"></script>
-     
-      <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <link rel="stylesheet" href="../../server/static/css/unslider.css">
+        <!-- Resource jQuery -->
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -50,7 +43,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
          <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-               <a href="#top" onclick="$(&quot;#menu-close&quot;).click();"><img src="img/Garo%20logotipo.svg" width="40%"></a>
+               <a href="#top" onclick="$(&quot;#menu-close&quot;).click();"><img src="../../server/static/img/Garo%20logotipo.svg" width="40%"></a>
             </li>
             <li>
                <a href="#about" onclick="$(&quot;#menu-close&quot;).click();" class="marg">Somos</a>
@@ -74,12 +67,12 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
       <header id="top" class="hero-shot">
   <div class="video-responsive hidden-sm hidden-xs">
     <video loop="" autoplay="">
-      <source src="media/Secuencia%2002.mp4" type="video/mp4">
+      <source src="../../server/static/media/Secuencia%2002.mp4" type="video/mp4">
     </video>
   </div>
   <section class="container-fluid no-padding" style="display: flex;">
   <div class="flex-center">
-    <img src="img/Garo%20logotipo.svg" class="logoresponsivegaro enfrente">
+    <img src="../../server/static/img/Garo%20logotipo.svg" class="logoresponsivegaro enfrente">
   </div>
 </section>
 </header>
@@ -134,7 +127,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                                       <div class="col-md-4">
                     <div class="service-item">
                        <span class="fa-stack fa-4x">
-                       <img src="img/AAA.png" width="100%">
+                       <img src="../../server/static/img/AAA.png" width="100%">
                        </span><br><br>
                        <p>Son aquellos anuncios ubicados en las vialidades principales y más transitadas de la ciudad, donde hay plazas y zonas comerciales.</p>
                     </div>
@@ -142,7 +135,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                                            <div class="col-md-4">
                         <div class="service-item">
                            <span class="fa-stack fa-4x">
-                           <img src="img/AA.png" width="100%">
+                           <img src="../../server/static/img/AA.png" width="100%">
                            </span><br>
                            <br>
                            <p>Son los anuncios colocados en vías secundarias.</p>
@@ -151,7 +144,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                      <div class="col-md-4">
                         <div class="service-item">
                            <span class="fa-stack fa-4x">
-                           <img src="img/A.png" width="100%">
+                           <img src="../../server/static/img/A.png" width="100%">
                            </span><br>
                            <br>
                            <p>Son los anuncios colocados en las afueras de la ciudad.</p>
@@ -192,67 +185,67 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                      <ul>
                         <a id="modal-1" href="#portfolioModal1" data-toggle="modal">
                            <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/Carretera%20cuota%20celaya%20natural.png" alt="Image1">
+                              <img src="../../server/static/img/Carretera%20cuota%20celaya%20natural.png" alt="Image1">
                               <div class="overAA" data-category="AA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal2" data-toggle="modal">
                            <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" alt="Image 2">
+                              <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" alt="Image 2">
                               <div class="overAA" data-category="A"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal3" data-toggle="modal">
                            <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/Zaragoza%20cruzada.png" alt="Image 3">
+                              <img src="../../server/static/img/Zaragoza%20cruzada.png" alt="Image 3">
                               <div class="overAA" data-category="AA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal4" data-toggle="modal">
                            <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/PQ2000%20natural%20pueblear.png" alt="Image 4">
+                              <img src="../../server/static/img/PQ2000%20natural%20pueblear.png" alt="Image 4">
                               <div class="overAA" data-category="AAA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal5" data-toggle="modal">
                            <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/LSP%20natural.png" alt="Image 5">
+                              <img src="../../server/static/img/LSP%20natural.png" alt="Image 5">
                               <div class="overAA" data-category="AA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal6" data-toggle="modal">
                            <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/alamos.png" alt="Image 6">
+                              <img src="../../server/static/img/alamos.png" alt="Image 6">
                               <div class="overAA" data-category="AAA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal7" data-toggle="modal">
                            <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/PQ2000/PQ2000%20natural.png" alt="Image 7">
+                              <img src="../../server/static/img/PQ2000/PQ2000%20natural.png" alt="Image 7">
                               <div class="overAA" data-category="AAA"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal8" data-toggle="modal">
                            <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" alt="Image 8">
+                              <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" alt="Image 8">
                               <div class="overAA" data-category="A"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal9" data-toggle="modal">
                            <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/El%20colorado%20natural.png" alt="Image 8">
+                              <img src="../../server/static/img/El%20colorado%20natural.png" alt="Image 8">
                               <div class="overAA" data-category="A"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal10" data-toggle="modal">
                            <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Aeropuerto%20natural.png" alt="Image 8">
+                              <img src="../../server/static/img/Aeropuerto%20natural.png" alt="Image 8">
                               <div class="overAA" data-category="A"></div>
                            </li>
                         </a>
                         <a href="#portfolioModal11" data-toggle="modal">
                            <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/El%20Carmen%20cruzada.png" alt="Image 8">
+                              <img src="../../server/static/img/El%20Carmen%20cruzada.png" alt="Image 8">
                               <div class="overAA" data-category="A"></div>
                            </li>
                         </a>
@@ -281,9 +274,9 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                   <div class="row" id="serviciostodos">
                      <div class="col-md-4">
                         <div class="service-item">
-                            <h2>C</h2><br>
+                            <h2>A</h2><br>
                            <span class="fa-stack fa-4x">
-                           <a href="#filt"><img src="img/anuncio.png" width="100%"></a>
+                           <a href="#filt"><img src="../../server/static/img/anuncio.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Renta de espacios publicitarios
@@ -293,9 +286,9 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                      </div>                      
                      <div class="col-md-4">
                         <div class="service-item">
-                            <h2>A</h2><br>
+                            <h2>B</h2><br>
                            <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="toggler('construccion');"><img src="img/construccion.png" width="100%"></a>
+                               <a href="#services" onclick="toggler('construccion');"><img src="../../server/static/img/construccion.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Fabricación de estructuras
@@ -304,9 +297,9 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                      </div>
                      <div class="col-md-4">
                         <div class="service-item">
-                            <h2>B</h2><br>
+                            <h2>C</h2><br>
                            <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="toggler2('impresion');"><img src="img/impresora.png" width="100%"></a>
+                               <a href="#services" onclick="toggler2('impresion');"><img src="../../server/static/img/impresora.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Producción, impresión y colocación de artes
@@ -321,7 +314,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                         <div class="service-item">
                             <h2>A</h2><br>
                            <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/construccion.png" width="100%"></a>
+                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="../../server/static/img/construccion.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Fabricación de estructuras
@@ -331,13 +324,13 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                        </div>
                         <div class="row">
                         <div class="col-md-4">
-                            <img src="img/Foto%201.png" width="100%">
+                            <img src="../../server/static/img/Foto%201.png" width="100%">
                         </div>
                         <div class="col-md-4">
-                            <img src="img/Foto%202.png" width="100%">
+                            <img src="../../server/static/img/Foto%202.png" width="100%">
                         </div>
                         <div class="col-md-4">
-                            <img src="img/Foto%204.png" width="100%">
+                            <img src="../../server/static/img/Foto%204.png" width="100%">
                         </div>
                        </div>   
                        
@@ -349,7 +342,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                         <div class="service-item">
                             <h2>B</h2><br>
                            <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/impresora.png" width="100%"></a>
+                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="../../server/static/img/impresora.png" width="100%"></a>
                            </span><br>
                            <h4 class="marg">
                               Producción, impresión y colocación de artes
@@ -359,7 +352,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                     </div>
                     <div class="row">
                        <div class="col-md-4 col-md-offset-4">
-                            <img src="img/Impresion.png" width="100%">
+                            <img src="../../server/static/img/Impresion.png" width="100%">
                         </div>
                     </div>
                    </div>
@@ -405,38 +398,38 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
 	<ul>
 		<li>
                        <div class="col-md-4">
-                            <img src="img/logos/Bacardi.svg" width="60%">
+                            <img src="../../server/static/img/logos/Bacardi.svg" width="60%">
                         </div>
                        <div class="col-md-4">
-                            <img src="img/logos/Holiday_Inn.svg" width="60%">
+                            <img src="../../server/static/img/logos/Holiday_Inn.svg" width="60%">
                         </div>
                        <div class="col-md-4">
-                            <img src="img/logos/itesmnew%20%5BConverted%5D.svg" width="60%">
+                            <img src="../../server/static/img/logos/itesmnew%20%5BConverted%5D.svg" width="60%">
                         </div>
                
                    </li>
 		<li>
                        <div class="col-md-4">
-                            <img src="img/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg" width="60%">
+                            <img src="../../server/static/img/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg" width="60%">
                         </div>
                        <div class="col-md-4">
-                            <img src="img/logos/palacio.svg" width="60%">
+                            <img src="../../server/static/img/logos/palacio.svg" width="60%">
                         </div>
                        <div class="col-md-4">
-                            <img src="img/logos/peugeot_logo_2013.svg" width="60%">
+                            <img src="../../server/static/img/logos/peugeot_logo_2013.svg" width="60%">
                         </div>
 
             
                   </li>
         <li>
                         <div class="col-md-4">
-                            <img src="img/logos/liverpool_logo.svg" width="60%">
+                            <img src="../../server/static/img/logos/liverpool_logo.svg" width="60%">
                         </div>
                        <div class="col-md-4">
-                           <img src="img/logos/Logo_CAISA-2.png" width="60%">
+                           <img src="../../server/static/img/logos/Logo_CAISA-2.png" width="60%">
                         </div>
                         <div class="col-md-4">
-                            <img src="img/logos/Subway.svg" width="60%">
+                            <img src="../../server/static/img/logos/Subway.svg" width="60%">
                         </div>
         
         </li>
@@ -502,13 +495,13 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                <div class="col-xs-10 col-xs-offset-1 text-center">
                   <ul class="list-inline">
                      <li>
-                        <a href="#"><img src="img/logos/facebu.svg" width="30%"></a>
+                        <a href="#"><img src="../../server/static/img/logos/facebu.svg" width="30%"></a>
                      </li>
                      <li>
-                        <a href="#"><img src="img/logos/tuit.svg" width="30%"></a>
+                        <a href="#"><img src="../../server/static/img/logos/tuit.svg" width="30%"></a>
                      </li>
                      <li>
-                        <a href="#"><img src="img/logos/insta.svg" width="30%"></a>
+                        <a href="#"><img src="../../server/static/img/logos/insta.svg" width="30%"></a>
                      </li>                      
                   </ul>
                   <hr class="small">
@@ -532,11 +525,11 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/Carretera%20cuota%20celaya%20natural.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20cuota%20celaya%20natural.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20cuota%20Celaya%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20cuota%20Celaya%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -567,11 +560,11 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%20natural%20.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%20natural%20.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -601,19 +594,19 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/Zaragoza%20natural.png" width="100%">
+                  <img src="../../server/static/img/Zaragoza%20natural.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/Zaragoza%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/Zaragoza%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
                <div class="col-lg-6">
-                  <img src="img/Zaragoza%20natural%20noche.png" width="100%">
+                  <img src="../../server/static/img/Zaragoza%20natural%20noche.png" width="100%">
                </div>
                <div class="col-lg-6">
-                  <img src="img/Zaragoza%20cruzada%20noche.png" width="100%">
+                  <img src="../../server/static/img/Zaragoza%20cruzada%20noche.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -645,19 +638,19 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/PQ2000%20natural%20pueblear.png" width="100%">
+                  <img src="../../server/static/img/PQ2000%20natural%20pueblear.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/PQ2000%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/PQ2000%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
                <div class="col-lg-6">
-                  <img src="img/PQ2000%20Natural%20noche.png" width="100%">
+                  <img src="../../server/static/img/PQ2000%20Natural%20noche.png" width="100%">
                </div>
                <div class="col-lg-6">
-                  <img src="img/PQ2000%20noche%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/PQ2000%20noche%20cruzada.png" width="100%">
                </div>
             </div>             
             <div class="row">
@@ -686,11 +679,11 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/LSP%20natural.png" width="100%">
+                  <img src="../../server/static/img/LSP%20natural.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/LSP%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/LSP%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -719,19 +712,19 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/%C3%81lamos%20natural%202.png" width="100%">
+                  <img src="../../server/static/img/%C3%81lamos%20natural%202.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/alamos.png" width="100%">
+                  <img src="../../server/static/img/alamos.png" width="100%">
                </div>
             </div>
             <div class="row">
                <div class="col-lg-6">
-                  <img src="img/%C3%81lamos%20natural%20noche.png" width="100%">
+                  <img src="../../server/static/img/%C3%81lamos%20natural%20noche.png" width="100%">
                </div>
                <div class="col-lg-6">
-                  <img src="img/%C3%81lamos%20cruzada%20noche.png" width="100%">
+                  <img src="../../server/static/img/%C3%81lamos%20cruzada%20noche.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -761,19 +754,19 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/PQ2000/PQ2000%20natural.png" width="100%">
+                  <img src="../../server/static/img/PQ2000/PQ2000%20natural.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/PQ2000/PQ2000%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/PQ2000/PQ2000%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
                <div class="col-lg-6">
-                  <img src="img/Natural%20noche.png" width="100%">
+                  <img src="../../server/static/img/Natural%20noche.png" width="100%">
                </div>
                <div class="col-lg-6">
-                  <img src="img/PQ2000%20cruzada%20noche.png" width="100%">
+                  <img src="../../server/static/img/PQ2000%20cruzada%20noche.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -801,11 +794,11 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png" width="100%">
+                  <img src="../../server/static/img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -834,11 +827,11 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/El%20colorado%20natural.png" width="100%">
+                  <img src="../../server/static/img/El%20colorado%20natural.png" width="100%">
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/El%20colorado%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/El%20colorado%20cruzada.png" width="100%">
                </div>
             </div>
             <div class="row">
@@ -867,12 +860,12 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/MCC_3882.png" width="100%">
+                  <img src="../../server/static/img/MCC_3882.png" width="100%">
                    
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/Aeropuerto%20natural.png" width="100%">
+                  <img src="../../server/static/img/Aeropuerto%20natural.png" width="100%">
                    
                </div>
             </div>
@@ -903,12 +896,12 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             <div class="row">
                <div class="col-lg-6">
                   <h3>Vista natural</h3>
-                  <img src="img/El%20carmen%20natural%202.png" width="100%">
+                  <img src="../../server/static/img/El%20carmen%20natural%202.png" width="100%">
                    
                </div>
                <div class="col-lg-6">
                   <h3>Vista cruzada</h3>
-                  <img src="img/El%20Carmen%20cruzada.png" width="100%">
+                  <img src="../../server/static/img/El%20Carmen%20cruzada.png" width="100%">
                    
                </div>
             </div>
@@ -926,6 +919,14 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
             </div>
          </div>
       </div>
+    <script src="../../server/static/js/jquery.js"></script>
+        <script src="../../server/static/js/jquery-2.1.1.js"></script>              
+      <script src="../../server/static/js/jquery.mixitup.min.js"></script> 
+          
+      <script src="../../server/static/js/bootstrap.min.js"></script>
+        <script src="../../server/static/js/maps.js"></script>
+     
+      <script src="../../server/static/js/main.js"></script>   
        <script>
         function toggler(divId) {
             $("#" + divId).toggle();
@@ -951,9 +952,9 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
 			$('.my-slider').unslider();
 		});
       </script>
-      <script src="js/unslider.js"></script>
-      <script src="js/video.js"></script>   
-      <script src="js/modals.js"></script>
+      <script src="../../server/static/js/unslider.js"></script>
+      <script src="../../server/static/js/video.js"></script>   
+      <script src="../../server/static/js/modals.js"></script>
       <script></script>
    
 </body></html>
