@@ -495,13 +495,13 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
                <div class="col-xs-10 col-xs-offset-1 text-center">
                   <ul class="list-inline">
                      <li>
-                        <a href="#"><img src="../../server/static/img/logos/facebu.svg" width="30%"></a>
+                        <a href="https://www.facebook.com/garomedios/"><img src="../../server/static/img/logos/facebu.svg" width="30%"></a>
                      </li>
                      <li>
-                        <a href="#"><img src="../../server/static/img/logos/tuit.svg" width="30%"></a>
+                        <a href="https://twitter.com/Garoqro"><img src="../../server/static/img/logos/tuit.svg" width="30%"></a>
                      </li>
                      <li>
-                        <a href="#"><img src="../../server/static/img/logos/insta.svg" width="30%"></a>
+                        <a href="https://www.instagram.com/garomedios/"><img src="../../server/static/img/logos/insta.svg" width="30%"></a>
                      </li>                      
                   </ul>
                   <hr class="small">
@@ -927,26 +927,7 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
         <script src="../../server/static/js/maps.js"></script>
      
       <script src="../../server/static/js/main.js"></script>   
-       <script>
-        function toggler(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden");     
-            document.getElementById("serviciostodos").className = "hidden";
-            document.getElementById("impresion").className = "hidden";
-        }
-        function toggler2(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden"); 
-            document.getElementById("serviciostodos").className = "hidden";
-            document.getElementById("construccion").className = "hidden";
-        }
-        function togglerback(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden");            
-            document.getElementById("impresion").className = "hidden";
-            document.getElementById("construccion").className = "hidden";
-        }
-       </script>
+       <script src="../../server/static/js/toggler.js"></script>
       <script>
 		jQuery(document).ready(function($) {
 			$('.my-slider').unslider();
