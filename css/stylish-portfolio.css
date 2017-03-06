@@ -606,7 +606,7 @@ strong {
 }
 
 .hero-shot {
-	overflow-y: hidden;
+	overflow: hidden;
 	height: 768px;
 }
 

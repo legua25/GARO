@@ -1,959 +1,933 @@
 <!DOCTYPE html>
-<html lang="en"><head><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style { font: 400 11px Roboto, Arial, sans-serif;text-decoration: none; }.gm-style img { max-width: none; }</style>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>GARO</title>
-      <!-- Bootstrap Core CSS -->
-    
-        <script type="text/javascript">try {
-var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
-var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
-var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
-var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
-var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
-} catch (ex) { console.error('Error executing AG js: ' + ex); }</script>
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/full-slider.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/reset.css" rel="stylesheet">
-      <link href="css/full-slider.css" rel="stylesheet">
-    
-      <!-- Custom CSS -->
-      <link href="css/stylish-portfolio.css" rel="stylesheet">
-      <!-- Custom Fonts -->
-      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/unslider.css">
-       <script src="js/jquery.js"></script>
-        <script src="js/jquery-2.1.1.js"></script>              
-      <script src="js/jquery.mixitup.min.js"></script> 
-          
-      <script src="js/bootstrap.min.js"></script>
-        <script src="js/maps.js"></script>
-     
-      <script src="js/main.js"></script> <!-- Resource jQuery -->
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/3/intl/es_ALL/controls.js"></script></head>
-   <body>
-      <!-- Navigation -->
-      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-      <nav id="sidebar-wrapper" class="">
-         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-               <a href="#top" onclick="$(&quot;#menu-close&quot;).click();"><img src="img/Garo%20logotipo.svg" width="40%"></a>
-            </li>
-            <li>
-               <a href="#about" onclick="$(&quot;#menu-close&quot;).click();" class="marg">Somos</a>
-            </li>
-            <li>
-               <a href="#espectaculares" onclick="$(&quot;#menu-close&quot;).click();">Espectaculares</a>
-            </li>             
-            <li>
-               <a href="#services" onclick="$(&quot;#menu-close&quot;).click();">Servicios</a>
-            </li>
-
-            <li>
-               <a href="#clients" onclick="$(&quot;#menu-close&quot;).click();">Clientes</a>
-            </li>
-            <li>
-               <a href="#contact" onclick="$(&quot;#menu-close&quot;).click();">Contacto</a>
-            </li>
-         </ul>
-      </nav>
-      <!-- Header -->
-      <header id="top" class="hero-shot">
-  <div class="video-responsive hidden-sm hidden-xs">
-    <video loop="" autoplay="">
-      <source src="media/Secuencia%2002.mp4" type="video/mp4">
-    </video>
-  </div>
-  <section class="container-fluid no-padding" style="display: flex;">
-  <div class="flex-center">
-    <img src="img/Garo%20logotipo.svg" class="logoresponsivegaro enfrente">
-  </div>
-</section>
-</header>
-      <!-- About -->
-      <section id="about" class="about bg-primary">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <strong>
-                     <h2>20 años conquistando las calles</h2>
-                  </strong>
-                  <br>
-                  <hr class="small">
-                  <p class="lead">Somos una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En Garo te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados.</p>
-               </div>
-            </div>
-            <!-- /.row -->
-
-         </div>
-         <!-- /.container -->
-      </section>
-      <!-- Services -->
-      <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-      <section class="about" id="espectaculares">
-          <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="row">
-                  <div class="col-md-12">
-                     <h2 class="text-center">Anuncios espectaculares – el amor a múltiples vistas</h2>
-                  </div>
-               </div>
-               <br><br>
-               <div class="row">
-                  <div class="col-xs-12 text-center">
-                     <p class="lead">La publicidad exterior es el medio ideal para comunicar tus mensajes entre el movimiento constante de la ciudad. Contamos con anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-        </div>      
-         <br>
-           <div class="row">
-            <div class="col-md-12">
-  
-               <br>
-
-
-               <div class="row text-center">
-                   
-                  <div class="col-md-8 col-md-offset-2">
-                                      <div class="col-md-4">
-                    <div class="service-item">
-                       <span class="fa-stack fa-4x">
-                       <img src="img/AAA.png" width="100%">
-                       </span><br><br>
-                       <p>Son aquellos anuncios ubicados en las vialidades principales y más transitadas de la ciudad, donde hay plazas y zonas comerciales.</p>
-                    </div>
-                </div>
-                                           <div class="col-md-4">
-                        <div class="service-item">
-                           <span class="fa-stack fa-4x">
-                           <img src="img/AA.png" width="100%">
-                           </span><br>
-                           <br>
-                           <p>Son los anuncios colocados en vías secundarias.</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="service-item">
-                           <span class="fa-stack fa-4x">
-                           <img src="img/A.png" width="100%">
-                           </span><br>
-                           <br>
-                           <p>Son los anuncios colocados en las afueras de la ciudad.</p>
-                        </div>
-                     </div>
-
-
-                  </div>
-
-               </div>
-
-            </div>
-         </div>
-      </section>
-
-      <br>
-      <section id="filt">
-         <div class="row">
-            <div class="col-md-12">
-               <main class="cd-main-content">
-                  <div class="cd-tab-filter-wrapper">
-                     <div class="cd-tab-filter">
-                        <ul class="cd-filters">
-                           <li class="placeholder">
-                              <a data-type="all" href="#0">Todos</a> <!-- selected option on mobile -->
-                           </li>
-                           <li class="filter"><a class="selected" href="#0" data-type="all">Todos</a></li>
-                           <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3" class="verd">AAA</a></li>
-                           <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" class="morad">AA</a></li>
-                           <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" class="amaril">A</a></li>
-                        </ul>
-                        <!-- cd-filters -->
-                     </div>
-                     <!-- cd-tab-filter -->
-                  </div>
-                  <!-- cd-tab-filter-wrapper -->
-                  <section class="cd-gallery">
-                     <ul>
-                        <a id="modal-1" href="#portfolioModal1" data-toggle="modal">
-                           <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/Carretera%20cuota%20celaya%20natural.png" alt="Image1">
-                              <div class="overAA" data-category="AA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal2" data-toggle="modal">
-                           <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" alt="Image 2">
-                              <div class="overAA" data-category="A"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal3" data-toggle="modal">
-                           <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/Zaragoza%20cruzada.png" alt="Image 3">
-                              <div class="overAA" data-category="AA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal4" data-toggle="modal">
-                           <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/PQ2000%20natural%20pueblear.png" alt="Image 4">
-                              <div class="overAA" data-category="AAA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal5" data-toggle="modal">
-                           <li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
-                              <img src="img/LSP%20natural.png" alt="Image 5">
-                              <div class="overAA" data-category="AA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal6" data-toggle="modal">
-                           <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/alamos.png" alt="Image 6">
-                              <div class="overAA" data-category="AAA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal7" data-toggle="modal">
-                           <li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
-                              <img src="img/PQ2000/PQ2000%20natural.png" alt="Image 7">
-                              <div class="overAA" data-category="AAA"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal8" data-toggle="modal">
-                           <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" alt="Image 8">
-                              <div class="overAA" data-category="A"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal9" data-toggle="modal">
-                           <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/El%20colorado%20natural.png" alt="Image 8">
-                              <div class="overAA" data-category="A"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal10" data-toggle="modal">
-                           <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/Aeropuerto%20natural.png" alt="Image 8">
-                              <div class="overAA" data-category="A"></div>
-                           </li>
-                        </a>
-                        <a href="#portfolioModal11" data-toggle="modal">
-                           <li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
-                              <img src="img/El%20Carmen%20cruzada.png" alt="Image 8">
-                              <div class="overAA" data-category="A"></div>
-                           </li>
-                        </a>
-                         
-                        <li class="gap"></li>
-                        <li class="gap"></li>
-                        <li class="gap"></li>
-            </ul>                    <div class="row">
-
-                   </div>
-                     <div class="cd-fail-message">Sin resultados</div>
-                  </section>
-                  <!-- cd-gallery -->
-               </main>
-
-            </div>
-         </div>
-      
-
-      </section>
-      <section id="services" class="services bg-secondary">
-            <div class="row text-center">
-               <div class="col-lg-10 col-lg-offset-1">
-                  <h2>Vendemos el abc de los anuncios espectaculares</h2>
-                  <hr class="small">
-                  <div class="row" id="serviciostodos">
-                     <div class="col-md-4">
-                        <div class="service-item">
-                            <h2>C</h2><br>
-                           <span class="fa-stack fa-4x">
-                           <a href="#filt"><img src="img/anuncio.png" width="100%"></a>
-                           </span><br>
-                           <h4 class="marg">
-                              Renta de espacios publicitarios
-                           </h4><br>
-                           <p class="text-center"><strong>Tip de contratación: El periodo mínimo de efectividad por contratación recomendado por Garo medios publicitarios es de 3 meses.</strong></p>
-                        </div>
-                     </div>                      
-                     <div class="col-md-4">
-                        <div class="service-item">
-                            <h2>A</h2><br>
-                           <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="toggler('construccion');"><img src="img/construccion.png" width="100%"></a>
-                           </span><br>
-                           <h4 class="marg">
-                              Fabricación de estructuras
-                           </h4>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="service-item">
-                            <h2>B</h2><br>
-                           <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="toggler2('impresion');"><img src="img/impresora.png" width="100%"></a>
-                           </span><br>
-                           <h4 class="marg">
-                              Producción, impresión y colocación de artes
-                           </h4>
-                        </div>
-                     </div>
-
-                  </div>
-                   <div class="row" style="display: none;" id="construccion">
-                       <div class="row">
-                       <div class="col-md-4 col-md-offset-4">
-                        <div class="service-item">
-                            <h2>A</h2><br>
-                           <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/construccion.png" width="100%"></a>
-                           </span><br>
-                           <h4 class="marg">
-                              Fabricación de estructuras
-                           </h4>
-                        </div>
-                     </div>
-                       </div>
-                        <div class="row">
-                        <div class="col-md-4">
-                            <img src="img/Foto%201.png" width="100%">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Foto%202.png" width="100%">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Foto%204.png" width="100%">
-                        </div>
-                       </div>   
-                       
-                   </div>
-                   <div class="row" style="display: none;" id="impresion">
-                       
-                    <div class="row">
-                     <div class="col-md-4 col-md-offset-4">
-                        <div class="service-item">
-                            <h2>B</h2><br>
-                           <span class="fa-stack fa-4x">
-                               <a href="#services" onclick="togglerback('serviciostodos');"><img src="img/impresora.png" width="100%"></a>
-                           </span><br>
-                           <h4 class="marg">
-                              Producción, impresión y colocación de artes
-                           </h4>
-                        </div>
-                     </div>                    
-                    </div>
-                    <div class="row">
-                       <div class="col-md-4 col-md-offset-4">
-                            <img src="img/Impresion.png" width="100%">
-                        </div>
-                    </div>
-                   </div>
-                  <!-- /.row (nested) -->
-               </div>
-               <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-         <!-- /.container -->
-      </section>
-      <!-- Map -->
-      <!-- Portfolio -->
-      <section id="mapa1" class="portfolio">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-12 text-center">
-                        <h2>Nuestros espectaculares</h2>
-                        <br>
-                     </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                     <div class="col-xs-12">
-                        <div id="map" style="width: 100%; height: 400px; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 43px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 43px; top: 330px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 43px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -213px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -213px; top: 330px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -213px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 299px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 299px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 299px; top: 330px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 555px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 555px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 555px; top: 330px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 811px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 811px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 811px; top: 330px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1067px; top: 74px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1067px; top: -182px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1067px; top: 330px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 43px; top: 74px;"><canvas draggable="false" height="256" width="256" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 43px; top: 330px;"><canvas draggable="false" height="256" width="256" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 43px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -213px; top: 74px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -213px; top: 330px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -213px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 299px; top: 74px;"><canvas draggable="false" height="512" width="512" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 299px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 299px; top: 330px;"><canvas draggable="false" height="512" width="512" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 555px; top: 74px;"><canvas draggable="false" height="512" width="512" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 555px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 555px; top: 330px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 811px; top: 74px;"><canvas draggable="false" height="512" width="512" style="user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 811px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 811px; top: 330px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1067px; top: 74px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1067px; top: -182px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1067px; top: 330px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: -213px; top: -182px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i904!3i1807!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=77195" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -213px; top: 330px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i904!3i1809!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=52528" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -213px; top: 74px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i904!3i1808!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=130397" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 43px; top: -182px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i905!3i1807!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=96938" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 43px; top: 330px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i905!3i1809!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=5616" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 43px; top: 74px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i905!3i1808!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=83485" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 299px; top: 74px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i906!3i1808!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=103228" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 299px; top: -182px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i906!3i1807!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=116681" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 299px; top: 330px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i906!3i1809!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=25359" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 555px; top: 74px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i907!3i1808!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=122971" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 555px; top: -182px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i907!3i1807!4i256!2m3!1e0!2sm!3i375059154!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=5353" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 555px; top: 330px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i907!3i1809!4i256!2m3!1e0!2sm!3i375059191!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=45102" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 811px; top: 74px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i908!3i1808!4i256!2m3!1e0!2sm!3i375059142!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=78493" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 811px; top: -182px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i908!3i1807!4i256!2m3!1e0!2sm!3i375059142!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=25291" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 811px; top: 330px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i908!3i1809!4i256!2m3!1e0!2sm!3i375059142!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=624" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1067px; top: 74px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i909!3i1808!4i256!2m3!1e0!2sm!3i375058266!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=109423" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1067px; top: -182px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i909!3i1807!4i256!2m3!1e0!2sm!3i375058266!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=56221" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1067px; top: 330px;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i909!3i1809!4i256!2m3!1e0!2sm!3i375059142!3m9!2ses!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=20367" draggable="false" alt="" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div><iframe style="visibility: hidden; z-index: 0; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></iframe></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=20.592375,-100.283291&amp;z=12&amp;t=m&amp;hl=es&amp;gl=US&amp;mapclient=apiv3" title="Haz clic aquí para visualizar esta zona en Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 405px; top: 110px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Datos de mapas</div><div style="font-size: 13px;">Datos de mapas ©2017 Google, INEGI</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 228px; bottom: 0px; width: 181px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Datos de mapas</a><span>Datos de mapas ©2017 Google, INEGI</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Datos de mapas ©2017 Google, INEGI</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 142px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/es_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Términos de uso</a></div></div><div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Informar a Google acerca de errores en las imágenes o en el mapa de carreteras" href="https://www.google.com/maps/@20.5923748,-100.2832912,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Informar de un error de Maps</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;"><div title="Acerca la imagen" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div title="Aleja la imagen" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="El hombrecito naranja está en la parte superior del mapa." style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Girar el mapa 90 grados" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4_hdpi.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Muestra el callejero" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 28px; font-weight: 500;">Mapa</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 29px; text-align: left; display: none;"><div draggable="false" title="Muestra el callejero con relieve" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Relieve</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Muestra las imágenes de satélite" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left: 0px; min-width: 37px;">Satélite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 29px; text-align: left; display: none;"><div draggable="false" title="Muestra las imágenes con los nombres de las calles" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Etiquetas</label></div></div></div></div></div></div></div>
-                        <script defer="" src="https://maps.googleapis.com/maps/api/js?key=&#9;AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&amp;callback=initMap"></script>
-                     </div>
-                  </div>
-                  <br>
-                  <br>
-               </div>
-            </div>
-         </div>
-      </section>
-            <section id="clients" class="mapa bg-third" style="padding: 30px;">
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-12 text-center">
-                  <h2>Nuestros clientes</h2>
-                  <hr class="small">
-                   <div class="my-slider">
-	<ul>
-		<li>
-                       <div class="col-md-4">
-                            <img src="img/logos/Bacardi.svg" width="60%">
-                        </div>
-                       <div class="col-md-4">
-                            <img src="img/logos/Holiday_Inn.svg" width="60%">
-                        </div>
-                       <div class="col-md-4">
-                            <img src="img/logos/itesmnew%20%5BConverted%5D.svg" width="60%">
-                        </div>
-               
-                   </li>
-		<li>
-                       <div class="col-md-4">
-                            <img src="img/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg" width="60%">
-                        </div>
-                       <div class="col-md-4">
-                            <img src="img/logos/palacio.svg" width="60%">
-                        </div>
-                       <div class="col-md-4">
-                            <img src="img/logos/peugeot_logo_2013.svg" width="60%">
-                        </div>
-
-            
-                  </li>
-        <li>
-                        <div class="col-md-4">
-                            <img src="img/logos/liverpool_logo.svg" width="60%">
-                        </div>
-                       <div class="col-md-4">
-                           <img src="img/logos/Logo_CAISA-2.png" width="60%">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/logos/Subway.svg" width="60%">
-                        </div>
-        
-        </li>
-	</ul>
-</div>
-                    
-               </div>
-               <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-         </div>
-         <!-- /.container -->
-      </section>
-      <!-- Call to Action -->
-      <section id="contact" class="services">
-         <div class="content-section-a" id="contact">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 col-md-offset-3 text-center wrap_title margencontacto">
-                     <h2>Contacto</h2>
-                  </div>
-                  <form action="" method="post" role="form">
-                     <div class="col-md-6">
-                        <div class="form-group">
-                           <label for="InputName">Nombre</label>
-                           <div class="input-group">
-                              <input class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="InputEmail">Tu email</label>
-                           <div class="input-group">
-                              <input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="InputMessage">Mensaje</label>
-                           <div class="input-group">
-                              <textarea class="form-control" id="InputMessage" name="InputMessage" required="" rows="5"></textarea> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                           </div>
-                        </div>
-                        <input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Manda un correo">
-                     </div>
-                  </form>
-                  <hr class="featurette-divider hidden-lg">
-                  <div class="col-md-5 col-md-push-1 address">
-                     <address>
-                        <h3>Nuestras Oficinas</h3>
-                        <p class="lead"><a href="https://www.google.com.mx/maps/place/Ciruelos+137,+Fracc.+Jurica,+Jurica+Pinar,+76100+Santiago+de+Quer%C3%A9taro,+Qro./@20.6628727,-100.4427459,17z/data=!3m1!4b1!4m5!3m4!1s0x85d350a0b329908d:0x5d3a8579bc95b0cb!8m2!3d20.6628727!4d-100.4405572">Ciruelos #137 Interior 18 El Pinar <br>
-                           Jurica, Querétaro, Qro. C.P. 76100</a><br>
-                           Tel: 442 183 1219
-                        </p>
-                     </address>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Footer -->
-      <footer>
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-10 col-xs-offset-1 text-center">
-                  <ul class="list-inline">
-                     <li>
-                        <a href="#"><img src="img/logos/facebu.svg" width="30%"></a>
-                     </li>
-                     <li>
-                        <a href="#"><img src="img/logos/tuit.svg" width="30%"></a>
-                     </li>
-                     <li>
-                        <a href="#"><img src="img/logos/insta.svg" width="30%"></a>
-                     </li>                      
-                  </ul>
-                  <hr class="small">
-                  <p class="text-muted">Copyright © GARO 2017</p>
-               </div>
-            </div>
-         </div>
-         <a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: none; position: fixed;"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-      </footer>
-       
-      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>                   
-               </div>
-                
-            </div>
-            <div class="row margentitulomodal"><h1 class="h1px">Carretera Querétaro-Celaya</h1></div>                    
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/Carretera%20cuota%20celaya%20natural.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20cuota%20Celaya%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 800 m. de distancia.<br>
-•	Vista cruzada: 600 m. de distancia. <br>
-
-<strong>*Frente a Plaza Esfera y Plaza Galerías</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/20%C2%B034'36.5%22N+100%C2%B024'29.9%22W/@20.5768056,-100.4104943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5768056!4d-100.4083056" style="color:white;"><button class="button"><span> Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-                <div class="row margentitulomodal"><h1 class="h1px">Autopista México-Querétaro Km. 198 Parque Industrial Finsa RC</h1></div>                    
-             
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%20natural%20.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 700 m. de distancia. <br>
-•	Vista cruzada: 700 m. de distancia. <br>
-
-<strong>*Dentro de Parque Industrial Finsa</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/Parque+Finsa+II/@20.5300032,-100.2951428,11z/data=!4m8!1m2!2m1!1sParque+Industrial+Finsa+Quer%C3%A9taro!3m4!1s0x0:0x588e231b0ebaebe!8m2!3d20.5773899!4d-100.2008915?hl=es-419" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-            <div class="row margentitulomodal"><h1 class="h1px">Prolongación Zaragoza</h1></div>     
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/Zaragoza%20natural.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/Zaragoza%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <img src="img/Zaragoza%20natural%20noche.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <img src="img/Zaragoza%20cruzada%20noche.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 900 m. de distancia. <br>
-•	Vista cruzada: 50 m. en semáforo. <br>
-
-<strong>*Cerca del IMSS, Farmacias del Ahorro y escuelas.</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/20%C2%B034'49.6%22N+100%C2%B024'35.2%22W/@20.5804444,-100.4119665,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5804444!4d-100.4097778" style="color:white;"><button class="button"><span>Ir allá</span></button> </a>
-                   
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Parque Querétaro 2000 INDEREQ</h1></div>
-                               
-
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/PQ2000%20natural%20pueblear.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/PQ2000%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <img src="img/PQ2000%20Natural%20noche.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <img src="img/PQ2000%20noche%20cruzada.png" width="100%">
-               </div>
-            </div>             
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">
-                    •	Vista natural: 600 m. de distancia<br>
-                    •	Cruzada: 400 m. de distancia. <br>
-                    <strong>*Frente a zona comercial (SAM’S, Wallmart, Vips, Costco)</strong>
-                   </p><br>
-    <a href="https://www.google.com.mx/maps?q=20%C2%B037%2701.2%22N+100%C2%B023%2747.4%22W&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjSj_7XlrTSAhVFSyYKHcdeCPYQ_AUICCgB" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-               
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Libramiento Surponiente</h1></div>             
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/LSP%20natural.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/LSP%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 1km. de distancia.<br>
-•	Vista cruzada: 1km. de distancia. <br>
-
-<strong>*Rodeado de desarrollos inmobiliarios</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/20%C2%B033'00.7%22N+100%C2%B022'27.2%22W/@20.5501944,-100.3764109,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5501944!4d-100.3742222" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Álamos</h1></div>                          
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/%C3%81lamos%20natural%202.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/alamos.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <img src="img/%C3%81lamos%20natural%20noche.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <img src="img/%C3%81lamos%20cruzada%20noche.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 600 m. de distancia.<br>
-•	Vista cruzada: 400 m. de distancia. <br>
-<strong>
-*Frente a Plaza Boulevares, restaurante Nico’s y agencias automotrices.
-</strong>    
-</p><br>
-<a href="https://www.google.com.mx/maps/place/Lib.+Nte.+de+Quer%C3%A9taro,+Santiago+de+Quer%C3%A9taro,+Qro./@20.6114998,-100.3849255,17z/data=!3m1!4b1!4m5!3m4!1s0x85d35a8e2799ce27:0xe39c182a9d55262!8m2!3d20.6114948!4d-100.3827368?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
- <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Parque Querétaro 2000</h1></div>                               
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/PQ2000/PQ2000%20natural.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/PQ2000/PQ2000%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <img src="img/Natural%20noche.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <img src="img/PQ2000%20cruzada%20noche.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 900 m. de distancia.<br>
-•	Vista cruzada: 300 m. de distancia. <br>
-<strong>*Frente a Plaza del Parque y hotel Fiesta Americana.</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/20%C2%B037'01.8%22N+100%C2%B024'04.9%22W/@20.6171667,-100.4035498,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.6171667!4d-100.4013611" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
- <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Autopista México-Querétaro Km. 197 La Piedad</h1></div>                                    
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 700 m. de distancia. <br>
-•	Vista cruzada: 700 m. de distancia. <br>
-
-<strong>*Cerca de desarrollos inmobiiarios. </strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/Carr.+M%C3%A9xico-+Quer%C3%A9taro+197,+Parque+del+Cimatario,+Qro./@20.567565,-100.2518301,17z/data=!3m1!4b1!4m5!3m4!1s0x85d36824a48f36ef:0x57fe1657e49c6f05!8m2!3d20.56756!4d-100.2496414?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá</span></button> </a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-             <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
- <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Autopista México-Querétaro Km. 196 El Colorado</h1></div>     
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/El%20colorado%20natural.png" width="100%">
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/El%20colorado%20cruzada.png" width="100%">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 500m. <br>
-•	Vista cruzada: 1km. <br>
-
-<strong>*Frente a Parque Industrial El Marqués</strong>
-</p><br>
-<a href="https://www.google.com.mx/maps/place/El+muelle+del+Colorado./@20.5654009,-100.2461702,18z/data=!4m13!1m7!3m6!1s0x85d35a766a8ce837:0xe6bf10f2cc7c7d85!2sCarr.+M%C3%A9xico-+Quer%C3%A9taro,+El+Colorado,+San+Miguel+la+Piedad,+Qro.!3b1!8m2!3d20.564429!4d-100.2435524!3m4!1s0x0:0x2ea2e26191da4d2a!8m2!3d20.5661147!4d-100.2465641?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-             <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
- <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Aeropuerto Intercontinental de Querétaro</h1></div>     
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/MCC_3882.png" width="100%">
-                   
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/Aeropuerto%20natural.png" width="100%">
-                   
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 600 m. de distancia.<br>
-•	Vista cruzada: 300 m. de distancia.<br>
-<strong>*A un lado del Aeropuerto Intercontinental de Querétaro. </strong>
-
-</p><br>
-<a href="https://www.google.com.mx/maps/place/Carr.+Quer%C3%A9taro-Tequisquiapan,+Coyote,+Qro./@20.6366114,-100.2602881,12z/data=!4m5!3m4!1s0x85d35d7d8b141bc5:0x84e47e3dd585f135!8m2!3d20.6066975!4d-100.1465255?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-
-             <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
- <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-             <div class="row margentitulomodal"><h1 class="h1px">Autopista México-Querétaro Km. 197.5 El Carmen</h1></div>     
-            <div class="row">
-               <div class="col-lg-6">
-                  <h3>Vista natural</h3>
-                  <img src="img/El%20carmen%20natural%202.png" width="100%">
-                   
-               </div>
-               <div class="col-lg-6">
-                  <h3>Vista cruzada</h3>
-                  <img src="img/El%20Carmen%20cruzada.png" width="100%">
-                   
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-12">
-                  <br>
-                  <p class="rojo text-left">•	Vista natural: 400 m. de distancia.<br>
-•	Vista cruzada: 800 m. de distancia.<br>
-<strong>*Frente a Parque Industrial Bernardo Quintana. </strong>
-
-</p><br>
-<a href="https://www.google.com.mx/maps/place/Pedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro./@20.5717373,-100.27276,20z/data=!4m13!1m7!3m6!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!2sPedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro.!3b1!8m2!3d20.571731!4d-100.2725481!3m4!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!8m2!3d20.571731!4d-100.2725481?hl=es-419" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
-                   
-               </div>
-            </div>
-         </div>
-      </div>
-       <script>
-        function toggler(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden");     
-            document.getElementById("serviciostodos").className = "hidden";
-            document.getElementById("impresion").className = "hidden";
-        }
-        function toggler2(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden"); 
-            document.getElementById("serviciostodos").className = "hidden";
-            document.getElementById("construccion").className = "hidden";
-        }
-        function togglerback(divId) {
-            $("#" + divId).toggle();
-            $("#" + divId).removeClass("hidden");            
-            document.getElementById("impresion").className = "hidden";
-            document.getElementById("construccion").className = "hidden";
-        }
-       </script>
-      <script>
-		jQuery(document).ready(function($) {
-			$('.my-slider').unslider();
-		});
-      </script>
-      <script src="js/unslider.js"></script>
-      <script src="js/video.js"></script>   
-      <script src="js/modals.js"></script>
-      <script></script>
-   
-</body></html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Asora">
+		<title>GARO</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/full-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/full-slider.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/unslider.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/maps.js"></script>
+		<script src="js/main.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Navigation -->
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+		<nav id="sidebar-wrapper" class="">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+				<li class="sidebar-brand">
+					<a href="#top" onclick="$('#menu-close').click();"><img src="img/Garo%20logotipo.svg" width="40%"></a>
+				</li>
+				<li>
+					<a href="#about" onclick="$('#menu-close').click();" class="marg">Somos</a>
+				</li>
+				<li>
+					<a href="#espectaculares" onclick="$('#menu-close').click();">Espectaculares</a>
+				</li>
+				<li>
+					<a href="#services" onclick="$('#menu-close').click();">Servicios</a>
+				</li>
+				<li>
+					<a href="#clients" onclick="$('#menu-close').click();">Clientes</a>
+				</li>
+				<li>
+					<a href="#contact" onclick="$('#menu-close').click();">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Header -->
+		<header id="top" class="hero-shot">
+			<div class="video-responsive hidden-sm hidden-xs">
+				<video loop="" autoplay="">
+					<source src="media/Secuencia%2002.mp4" type="video/mp4">
+				</video>
+			</div>
+			<section class="container-fluid no-padding" style="display: flex;">
+				<div class="flex-center">
+					<img src="img/Garo%20logotipo.svg" class="logoresponsivegaro enfrente">
+				</div>
+			</section>
+		</header>
+		<!-- About -->
+		<section id="about" class="about bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<strong>
+							<h2>20 años conquistando las calles</h2>
+						</strong>
+						<br>
+						<hr class="small">
+						<p class="lead">Somos una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En Garo te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados.</p>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- Services -->
+		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+		<section class="about" id="espectaculares">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="text-center">Anuncios espectaculares – el amor a múltiples vistas</h2>
+							</div>
+						</div>
+						<br><br>
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<p class="lead">La publicidad exterior es el medio ideal para comunicar tus mensajes entre el movimiento constante de la ciudad. Contamos con anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<br>
+					<div class="row text-center">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="col-md-4">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<img src="img/AAA.png" width="100%">
+									</span><br><br>
+									<p>Son aquellos anuncios ubicados en las vialidades principales y más transitadas de la ciudad, donde hay plazas y zonas comerciales.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<img src="img/AA.png" width="100%">
+									</span><br>
+									<br>
+									<p>Son los anuncios colocados en vías secundarias.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<img src="img/A.png" width="100%">
+									</span><br>
+									<br>
+									<p>Son los anuncios colocados en las afueras de la ciudad.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br>
+		<section id="filt">
+			<div class="row">
+				<div class="col-md-12">
+					<main class="cd-main-content">
+						<div class="cd-tab-filter-wrapper">
+							<div class="cd-tab-filter">
+								<ul class="cd-filters">
+									<li class="placeholder">
+										<a data-type="all" href="#0">Todos</a> <!-- selected option on mobile -->
+									</li>
+									<li class="filter"><a class="selected" href="#0" data-type="all">Todos</a></li>
+									<li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3" class="verd">AAA</a></li>
+									<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" class="morad">AA</a></li>
+									<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" class="amaril">A</a></li>
+								</ul>
+								<!-- cd-filters -->
+							</div>
+							<!-- cd-tab-filter -->
+						</div>
+						<!-- cd-tab-filter-wrapper -->
+						<section class="cd-gallery">
+							<ul>
+								<a id="modal-1" href="#portfolioModal1" data-toggle="modal">
+									<li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
+										<img src="img/Carretera%20cuota%20celaya%20natural.png" alt="Image1">
+										<div class="overAA" data-category="AA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal2" data-toggle="modal">
+									<li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
+										<img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" alt="Image 2">
+										<div class="overAA" data-category="A"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal3" data-toggle="modal">
+									<li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
+										<img src="img/Zaragoza%20cruzada.png" alt="Image 3">
+										<div class="overAA" data-category="AA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal4" data-toggle="modal">
+									<li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
+										<img src="img/PQ2000%20natural%20pueblear.png" alt="Image 4">
+										<div class="overAA" data-category="AAA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal5" data-toggle="modal">
+									<li class="mix color-2 ad-overlay" style="display: inline-block; background-color: rgb(128, 79, 159);">
+										<img src="img/LSP%20natural.png" alt="Image 5">
+										<div class="overAA" data-category="AA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal6" data-toggle="modal">
+									<li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
+										<img src="img/alamos.png" alt="Image 6">
+										<div class="overAA" data-category="AAA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal7" data-toggle="modal">
+									<li class="mix color-3 ad-overlay" style="display: inline-block; background-color: rgb(0, 148, 109);">
+										<img src="img/PQ2000/PQ2000%20natural.png" alt="Image 7">
+										<div class="overAA" data-category="AAA"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal8" data-toggle="modal">
+									<li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
+										<img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" alt="Image 8">
+										<div class="overAA" data-category="A"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal9" data-toggle="modal">
+									<li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
+										<img src="img/El%20colorado%20natural.png" alt="Image 8">
+										<div class="overAA" data-category="A"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal10" data-toggle="modal">
+									<li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
+										<img src="img/Aeropuerto%20natural.png" alt="Image 8">
+										<div class="overAA" data-category="A"></div>
+									</li>
+								</a>
+								<a href="#portfolioModal11" data-toggle="modal">
+									<li class="mix color-1 ad-overlay" style="display: inline-block; background-color: rgb(255, 158, 21);">
+										<img src="img/El%20Carmen%20cruzada.png" alt="Image 8">
+										<div class="overAA" data-category="A"></div>
+									</li>
+								</a>
+								<li class="gap"></li>
+								<li class="gap"></li>
+								<li class="gap"></li>
+							</ul>
+							<div class="row">
+							</div>
+							<div class="cd-fail-message">Sin resultados</div>
+						</section>
+						<!-- cd-gallery -->
+					</main>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="services bg-secondary">
+			<div class="row text-center">
+				<div class="col-lg-10 col-lg-offset-1">
+					<h2>Vendemos el abc de los anuncios espectaculares</h2>
+					<hr class="small">
+					<div class="row" id="serviciostodos">
+						<div class="col-md-4">
+							<div class="service-item">
+								<h2>C</h2>
+								<br>
+								<span class="fa-stack fa-4x">
+								<a href="#filt"><img src="img/anuncio.png" width="100%"></a>
+								</span><br>
+								<h4 class="marg">
+									Renta de espacios publicitarios
+								</h4>
+								<br>
+								<p class="text-center"><strong>Tip de contratación: El periodo mínimo de efectividad por contratación recomendado por Garo medios publicitarios es de 3 meses.</strong></p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-item">
+								<h2>A</h2>
+								<br>
+								<span class="fa-stack fa-4x">
+								<a href="#services" onclick="toggler('construccion');"><img src="img/construccion.png" width="100%"></a>
+								</span><br>
+								<h4 class="marg">
+									Fabricación de estructuras
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-item">
+								<h2>B</h2>
+								<br>
+								<span class="fa-stack fa-4x">
+								<a href="#services" onclick="toggler2('impresion');"><img src="img/impresora.png" width="100%"></a>
+								</span><br>
+								<h4 class="marg">
+									Producción, impresión y colocación de artes
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="display: none;" id="construccion">
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+								<div class="service-item">
+									<h2>A</h2>
+									<br>
+									<span class="fa-stack fa-4x">
+									<a href="#services" onclick="togglerback('serviciostodos');"><img src="img/construccion.png" width="100%"></a>
+									</span><br>
+									<h4 class="marg">
+										Fabricación de estructuras
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<img src="img/Foto%201.png" width="100%">
+							</div>
+							<div class="col-md-4">
+								<img src="img/Foto%202.png" width="100%">
+							</div>
+							<div class="col-md-4">
+								<img src="img/Foto%204.png" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="row" style="display: none;" id="impresion">
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+								<div class="service-item">
+									<h2>B</h2>
+									<br>
+									<span class="fa-stack fa-4x">
+									<a href="#services" onclick="togglerback('serviciostodos');"><img src="img/impresora.png" width="100%"></a>
+									</span><br>
+									<h4 class="marg">
+										Producción, impresión y colocación de artes
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+								<img src="img/Impresion.png" width="100%">
+							</div>
+						</div>
+					</div>
+					<!-- /.row (nested) -->
+				</div>
+				<!-- /.col-lg-10 -->
+			</div>
+			<!-- /.row -->
+			<!-- /.container -->
+		</section>
+		<!-- Map -->
+		<!-- Portfolio -->
+		<section id="mapa1" class="portfolio">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h2>Nuestros espectaculares</h2>
+								<br>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-xs-12">
+								<div id="map" style="width: 100%; height: 400px; position: relative; overflow: hidden;"></div>
+								<script defer="" src="https://maps.googleapis.com/maps/api/js?key=&#9;AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&amp;callback=initMap"></script>
+							</div>
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="clients" class="mapa bg-third" style="padding: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h2>Nuestros clientes</h2>
+						<hr class="small">
+						<div class="my-slider">
+							<ul>
+								<li>
+									<div class="col-md-4">
+										<img src="img/logos/Bacardi.svg" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/Holiday_Inn.svg" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/itesmnew%20%5BConverted%5D.svg" width="60%">
+									</div>
+								</li>
+								<li>
+									<div class="col-md-4">
+										<img src="img/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/palacio.svg" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/peugeot_logo_2013.svg" width="60%">
+									</div>
+								</li>
+								<li>
+									<div class="col-md-4">
+										<img src="img/logos/liverpool_logo.svg" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/Logo_CAISA-2.png" width="60%">
+									</div>
+									<div class="col-md-4">
+										<img src="img/logos/Subway.svg" width="60%">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /.col-lg-10 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- Call to Action -->
+		<section id="contact" class="services">
+			<div class="content-section-a" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center wrap_title margencontacto">
+							<h2>Contacto</h2>
+						</div>
+						<form action="" method="post" role="form">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="InputName">Nombre</label>
+									<div class="input-group">
+										<input class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="InputEmail">Tu email</label>
+									<div class="input-group">
+										<input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email"> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="InputMessage">Mensaje</label>
+									<div class="input-group">
+										<textarea class="form-control" id="InputMessage" name="InputMessage" required="" rows="5"></textarea> <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+									</div>
+								</div>
+								<input class="btn wow tada btn-embossed btn-primary pull-right" id="submit" name="submit" type="submit" value="Manda un correo">
+							</div>
+						</form>
+						<hr class="featurette-divider hidden-lg">
+						<div class="col-md-5 col-md-push-1 address">
+							<address>
+								<h3>Nuestras Oficinas</h3>
+								<p class="lead"><a href="https://www.google.com.mx/maps/place/Ciruelos+137,+Fracc.+Jurica,+Jurica+Pinar,+76100+Santiago+de+Quer%C3%A9taro,+Qro./@20.6628727,-100.4427459,17z/data=!3m1!4b1!4m5!3m4!1s0x85d350a0b329908d:0x5d3a8579bc95b0cb!8m2!3d20.6628727!4d-100.4405572">Ciruelos #137 Interior 18 El Pinar <br>
+									Jurica, Querétaro, Qro. C.P. 76100</a><br>
+									Tel: 442 183 1219
+								</p>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 text-center">
+						<ul class="list-inline">
+							<li>
+								<a href="#"><img src="img/logos/facebu.svg" width="30%"></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/logos/tuit.svg" width="30%"></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/logos/insta.svg" width="30%"></a>
+							</li>
+						</ul>
+						<hr class="small">
+						<p class="text-muted">Copyright © GARO 2017</p>
+					</div>
+				</div>
+			</div>
+			<a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: none; position: fixed;"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+		</footer>
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Carretera Querétaro-Celaya</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/Carretera%20cuota%20celaya%20natural.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/Carretera%20cuota%20Celaya%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 800 m. de distancia.<br>
+							•	Vista cruzada: 600 m. de distancia. <br>
+							<strong>*Frente a Plaza Esfera y Plaza Galerías</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/20%C2%B034'36.5%22N+100%C2%B024'29.9%22W/@20.5768056,-100.4104943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5768056!4d-100.4083056" style="color:white;"><button class="button"><span> Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Autopista México-Querétaro Km. 198 Parque Industrial Finsa RC</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/Carretera%20Quer%C3%A9taro%20natural%20.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/Carretera%20Quer%C3%A9taro%20cruzada%20.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 700 m. de distancia. <br>
+							•	Vista cruzada: 700 m. de distancia. <br>
+							<strong>*Dentro de Parque Industrial Finsa</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/Parque+Finsa+II/@20.5300032,-100.2951428,11z/data=!4m8!1m2!2m1!1sParque+Industrial+Finsa+Quer%C3%A9taro!3m4!1s0x0:0x588e231b0ebaebe!8m2!3d20.5773899!4d-100.2008915?hl=es-419" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Prolongación Zaragoza</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/Zaragoza%20natural.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/Zaragoza%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="img/Zaragoza%20natural%20noche.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<img src="img/Zaragoza%20cruzada%20noche.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 900 m. de distancia. <br>
+							•	Vista cruzada: 50 m. en semáforo. <br>
+							<strong>*Cerca del IMSS, Farmacias del Ahorro y escuelas.</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/20%C2%B034'49.6%22N+100%C2%B024'35.2%22W/@20.5804444,-100.4119665,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5804444!4d-100.4097778" style="color:white;"><button class="button"><span>Ir allá</span></button> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Parque Querétaro 2000 INDEREQ</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/PQ2000%20natural%20pueblear.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/PQ2000%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="img/PQ2000%20Natural%20noche.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<img src="img/PQ2000%20noche%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">
+							•	Vista natural: 600 m. de distancia<br>
+							•	Cruzada: 400 m. de distancia. <br>
+							<strong>*Frente a zona comercial (SAM’S, Wallmart, Vips, Costco)</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps?q=20%C2%B037%2701.2%22N+100%C2%B023%2747.4%22W&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjSj_7XlrTSAhVFSyYKHcdeCPYQ_AUICCgB" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Libramiento Surponiente</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/LSP%20natural.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/LSP%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 1km. de distancia.<br>
+							•	Vista cruzada: 1km. de distancia. <br>
+							<strong>*Rodeado de desarrollos inmobiliarios</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/20%C2%B033'00.7%22N+100%C2%B022'27.2%22W/@20.5501944,-100.3764109,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.5501944!4d-100.3742222" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Álamos</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/%C3%81lamos%20natural%202.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/alamos.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="img/%C3%81lamos%20natural%20noche.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<img src="img/%C3%81lamos%20cruzada%20noche.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 600 m. de distancia.<br>
+							•	Vista cruzada: 400 m. de distancia. <br>
+							<strong>
+							*Frente a Plaza Boulevares, restaurante Nico’s y agencias automotrices.
+							</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/Lib.+Nte.+de+Quer%C3%A9taro,+Santiago+de+Quer%C3%A9taro,+Qro./@20.6114998,-100.3849255,17z/data=!3m1!4b1!4m5!3m4!1s0x85d35a8e2799ce27:0xe39c182a9d55262!8m2!3d20.6114948!4d-100.3827368?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Parque Querétaro 2000</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/PQ2000/PQ2000%20natural.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/PQ2000/PQ2000%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="img/Natural%20noche.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<img src="img/PQ2000%20cruzada%20noche.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 900 m. de distancia.<br>
+							•	Vista cruzada: 300 m. de distancia. <br>
+							<strong>*Frente a Plaza del Parque y hotel Fiesta Americana.</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/20%C2%B037'01.8%22N+100%C2%B024'04.9%22W/@20.6171667,-100.4035498,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.6171667!4d-100.4013611" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Autopista México-Querétaro Km. 197 La Piedad</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/Carretera%20Quer%C3%A9taro%202%20natural%20.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 700 m. de distancia. <br>
+							•	Vista cruzada: 700 m. de distancia. <br>
+							<strong>*Cerca de desarrollos inmobiiarios. </strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/Carr.+M%C3%A9xico-+Quer%C3%A9taro+197,+Parque+del+Cimatario,+Qro./@20.567565,-100.2518301,17z/data=!3m1!4b1!4m5!3m4!1s0x85d36824a48f36ef:0x57fe1657e49c6f05!8m2!3d20.56756!4d-100.2496414?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá</span></button> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Autopista México-Querétaro Km. 196 El Colorado</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/El%20colorado%20natural.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/El%20colorado%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 500m. <br>
+							•	Vista cruzada: 1km. <br>
+							<strong>*Frente a Parque Industrial El Marqués</strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/El+muelle+del+Colorado./@20.5654009,-100.2461702,18z/data=!4m13!1m7!3m6!1s0x85d35a766a8ce837:0xe6bf10f2cc7c7d85!2sCarr.+M%C3%A9xico-+Quer%C3%A9taro,+El+Colorado,+San+Miguel+la+Piedad,+Qro.!3b1!8m2!3d20.564429!4d-100.2435524!3m4!1s0x0:0x2ea2e26191da4d2a!8m2!3d20.5661147!4d-100.2465641?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Aeropuerto Intercontinental de Querétaro</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/MCC_3882.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/Aeropuerto%20natural.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 600 m. de distancia.<br>
+							•	Vista cruzada: 300 m. de distancia.<br>
+							<strong>*A un lado del Aeropuerto Intercontinental de Querétaro. </strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/Carr.+Quer%C3%A9taro-Tequisquiapan,+Coyote,+Qro./@20.6366114,-100.2602881,12z/data=!4m5!3m4!1s0x85d35d7d8b141bc5:0x84e47e3dd585f135!8m2!3d20.6066975!4d-100.1465255?hl=es-419&shorturl=1" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="row margentitulomodal">
+					<h1 class="h1px">Autopista México-Querétaro Km. 197.5 El Carmen</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Vista natural</h3>
+						<img src="img/El%20carmen%20natural%202.png" width="100%">
+					</div>
+					<div class="col-lg-6">
+						<h3>Vista cruzada</h3>
+						<img src="img/El%20Carmen%20cruzada.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<p class="rojo text-left">•	Vista natural: 400 m. de distancia.<br>
+							•	Vista cruzada: 800 m. de distancia.<br>
+							<strong>*Frente a Parque Industrial Bernardo Quintana. </strong>
+						</p>
+						<br>
+						<a href="https://www.google.com.mx/maps/place/Pedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro./@20.5717373,-100.27276,20z/data=!4m13!1m7!3m6!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!2sPedro+Escobedo-Santiago+de+Quer%C3%A9taro+12,+Parque+del+Cimatario,+Qro.!3b1!8m2!3d20.571731!4d-100.2725481!3m4!1s0x85d34297e9c9cc91:0x415fd8a0e1a5d767!8m2!3d20.571731!4d-100.2725481?hl=es-419" style="color:white;"><button class="button"><span>Ir allá </span></button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function toggler(divId) {
+			    $("#" + divId).toggle();
+			    $("#" + divId).removeClass("hidden");
+			    document.getElementById("serviciostodos").className = "hidden";
+			    document.getElementById("impresion").className = "hidden";
+			}
+			function toggler2(divId) {
+			    $("#" + divId).toggle();
+			    $("#" + divId).removeClass("hidden");
+			    document.getElementById("serviciostodos").className = "hidden";
+			    document.getElementById("construccion").className = "hidden";
+			}
+			function togglerback(divId) {
+			    $("#" + divId).toggle();
+			    $("#" + divId).removeClass("hidden");
+			    document.getElementById("impresion").className = "hidden";
+			    document.getElementById("construccion").className = "hidden";
+			}
+		</script>
+		<script>
+			jQuery(document).ready(function($) {
+				$('.my-slider').unslider();
+			});
+			    
+		</script>
+		<script src="js/unslider.js"></script>
+		<script src="js/video.js"></script>
+		<script src="js/modals.js"></script>
+		<script></script>
+	</body>
+</html>
