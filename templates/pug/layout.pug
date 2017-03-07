@@ -1,0 +1,27 @@
+//- "index.pug"
+
+doctype html
+html(lang=(self.language))
+	head
+
+		meta(charset='utf-8')
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+
+		//- SEO indexing & responsiveness
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(name='referrer' content='no-referrer-when-downgrade')
+		meta(name='robots' content='index, follow')
+		
+		//- Site details
+		meta(name='author' content='Asora')
+		meta(name='description' content=(self.description))
+		title #{self.title}
+
+		//- Facebook OpenGraph/Twitter Card support
+		block social
+		//- Stylesheets & scripts
+		block assets
+
+	body#root
+		block content

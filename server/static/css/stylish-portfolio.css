@@ -13,7 +13,7 @@ body {
 }
 @font-face{
     font-family: Frutiger;
-    src: url(../fonts/FrutigerRoman.ttf);
+    src: url(/static/fonts/FrutigerRoman.ttf);
 }
 
 header{
@@ -25,7 +25,7 @@ header{
 
 @media only screen and (min-width: 500px){
     header{
-        background: url(../img/fondopc.png) no-repeat center center scroll;
+        background: url(/static/images/fondopc.png) no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -35,7 +35,7 @@ header{
 
 @media only screen and (max-width:499px){
         header{
-        background: url(../img/fondocel.png) no-repeat center center scroll;
+        background: url(/static/images/fondocel.png) no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -196,7 +196,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/alamos.png) no-repeat center center scroll;
+    background: url(/static/images/alamos.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -226,7 +226,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(/static/images/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -304,7 +304,7 @@ hr.small {
 
 @font-face {
     font-family: GothicBold;
-    src: url(../fonts/FrutigerLT.ttf);
+    src: url(/static/fonts/FrutigerLT.ttf);
 }
 
 h1,h2,h3,h4,h5,h6,h7{
@@ -480,7 +480,7 @@ strong {
 }
 
 .mosaicos{
-    background-image: url(../img/Mosaico.svg);
+    background-image: url(/static/images/Mosaico.svg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -689,4 +689,41 @@ strong {
 
 .show{
     display: block !important;
+}
+
+li.ad-item {
+  display: inline-block;
+  background-color: rgb(128, 79, 159);
+}
+
+.overlay-category-a, .overlay-category-aa, .overlay-category-aaa {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.overlay-category-a {
+    background-image: url(/static/images/filterA.svg);
+}
+.overlay-category-aa {
+    background-image: url(/static/images/filterAA.svg);
+}
+.overlay-category-aaa {
+    background-image: url(/static/images/filterAAA.svg);
+}
+
+li.category-aa, li.category-a, li.category-aaa {
+    position: relative;
+}
+
+a.item:hover .overlay-category-a, a.item:hover .overlay-category-aa, a.item:hover .overlay-category-aaa {
+    opacity: 0.6;
+}
+a.item {
+    text-decoration: none;
 }

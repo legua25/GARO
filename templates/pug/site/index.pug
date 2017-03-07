@@ -1,0 +1,352 @@
+//- "index.pug"
+extends ../layout.pug
+include ../social.pug
+
+
+//- Social metadata & assets
+block social
+
+	+og-card('website', self.social)
+	+tw-card('summary_large_image', self.social)
+
+block assets
+
+	link(href='/static/css/bootstrap.min.css', rel='stylesheet')
+	link(href='/static/css/full-slider.css', rel='stylesheet')
+	link(href='/static/css/style.css', rel='stylesheet')
+	link(href='/static/css/reset.css', rel='stylesheet')
+	link(href='/static/css/full-slider.css', rel='stylesheet')
+	link(href='/static/css/stylish-portfolio.css', rel='stylesheet')
+	link(href='/static/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Didact+Gothic', rel='stylesheet')
+	link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+	link(rel='stylesheet', href='/static/css/unslider.css')
+	//if lt IE 9
+		script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+		script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+//- Site content
+block content
+
+	//- Menu toggle
+	a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
+			i.fa.fa-bars
+
+	//- Sidebar
+	nav#sidebar-wrapper
+		ul.sidebar-nav
+
+			a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
+				i.fa.fa-times
+
+			li.sidebar-brand
+				a.close-menu(href='#top') #[img(src='/static/images/Garo%20logotipo.svg', width='40%')]
+			li #[a.close-menu.marg(href='#about') Somos]
+			li #[a.close-menu(href='#espectaculares') Espectaculares]
+			li #[a.close-menu(href='#services') Servicios]
+			li #[a.close-menu(href='#clients') Clientes]
+			li #[a.close-menu(href='#contact') Contacto]
+
+	//- Hero shot
+	header#top.hero-shot
+
+		//- Background video
+		div.video-responsive.hidden-sm.hidden-xs
+			video(loop, autoplay)
+				source(src='/static/media/Secuencia%2002.mp4', type='video/mp4')
+
+		section.container-fluid.no-padding(style='display: flex;')
+			div.flex-center
+				img.logoresponsivegaro.enfrente(src='/static/images/Garo%20logotipo.svg')
+
+	//- About
+	section#about.about.bg-primary
+		div.container
+			div.row
+				div.col-lg-12.text-center
+
+					h2 20 años conquistando las calles
+					br
+					hr.small
+					p.lead Somos una agencia con 20 años de experiencia especializada en la renta, producción y venta de anuncios espectaculares establecida en la ciudad de Querétaro. En Garo te ayudamos a incrementar la exposición de tu marca, conquistando los mejores espacios de la ciudad y posicionándote en canales digitales, a través del desarrollo de contenidos especializados.
+
+	//- Ads showcase
+	section#espectaculares.about
+		div.container
+			div.row
+				div.col-md-12
+					div.row
+						div.col-md-12
+							h2.text-center Anuncios espectaculares &ndash; el amor a múltiples vistas
+					br
+					br
+					div.row
+						div.col-xs-12.text-center
+
+							p.lead La publicidad exterior es el medio ideal para comunicar tus mensajes entre el movimiento constante de la ciudad. Contamos con anuncios espectaculares ubicados en las vialidades principales del estado de Querétaro y en otras zonas privilegiadas.
+
+		br
+		div.row
+			div.col-md-12
+				br
+				div.row.text-center
+					div.col-md-8.col-md-offset-2
+
+						div.col-md-4
+							article.service-item
+								span.fa-stack.fa-4x #[img(src='/static/images/AAA.png', width='100%')]
+								br
+								br
+								p Son aquellos anuncios ubicados en las vialidades principales y más transitadas de la ciudad, donde hay plazas y zonas comerciales.
+
+						div.col-md-4
+							article.service-item
+								span.fa-stack.fa-4x #[img(src='/static/images/AA.png', width='100%')]
+								br
+								br
+								p Son los anuncios colocados en vías secundarias.
+
+						div.col-md-4
+							article.service-item
+								span.fa-stack.fa-4x #[img(src='/static/images/A.png', width='100%')]
+								br
+								br
+								p Son los anuncios colocados en las afueras de la ciudad.
+		br
+		section#filt
+			div.row
+				div.col-md-12
+					main.cd-main-content
+						div.cd-tab-filter-wrapper
+							div.cd-tab-filter
+
+								//- Ad showcase filters
+								ul.cd-filters
+									li.placeholder #[a(data-type='all', href='#0') Todos]
+										// selected option on mobile
+
+									li.filter #[a.selected(href='#0', data-type='all') Todos]
+									li.filter(data-filter='.category-aaa') #[a.verd(href='#0', data-type='color-3') AAA]
+									li.filter(data-filter='.category-aa') #[a.morad(href='#0', data-type='color-2') AA]
+									li.filter(data-filter='.category-a') #[a.amaril(href='#0', data-type='color-1') A]
+
+						//- Ad showcase gallery
+						section.cd-gallery
+							ul
+								each ad, index in self.ads
+
+									//- Ad item
+									a.item(href=`#portfolioModal${index + 1}`, data-toggle='modal')
+										li.mix(class=(ad.category))
+											img(src=(ad.thumbnail), alt=(ad.title))
+											div(class=`overlay-${ad.category}`)
+								
+								li.gap
+								li.gap
+								li.gap
+							div.row
+							div.cd-fail-message Sin resultados
+
+	//- Services
+	section#services.services.bg-secondary
+		div.row.text-center
+			div.col-lg-10.col-lg-offset-1
+				h2 Vendemos el ABC de los anuncios espectaculares
+				hr.small
+				div#serviciostodos.row
+					div.col-md-4
+						div.service-item
+							h2 A
+							br
+							span.fa-stack.fa-4x
+								a(href='#filt') #[img(src='/static/images/anuncio.png', width='100%')]
+							br
+							h4.marg  Renta de espacios publicitarios
+							br
+							p.text-center
+								strong Tip de contratación: El periodo mínimo de efectividad por contratación recomendado por Garo medios publicitarios es de 3 meses.
+
+					div.col-md-4
+						div.service-item
+							h2 B
+							br
+							span.fa-stack.fa-4x
+								a(href='#services', onclick="toggler('construccion');") #[img(src='/static/images/construccion.png', width='100%')]
+							br
+							h4.marg  Fabricación de estructuras
+
+					div.col-md-4
+						div.service-item
+							h2 C
+							br
+							span.fa-stack.fa-4x
+								a(href='#services', onclick="toggler2('impresion');") #[img(src='/static/images/impresora.png', width='100%')]
+							br
+							h4.marg  Producción, impresión y colocación de artes
+
+				div#construccion.row.hidden
+					div.row
+						div.col-md-4.col-md-offset-4
+							div.service-item
+								h2 B
+								br
+								span.fa-stack.fa-4x
+									a(href='#services', onclick="togglerback('serviciostodos');")
+										img(src='/static/images/construccion.png', width='100%')
+								br
+								h4.marg  Fabricación de estructuras
+					div.row
+						div.col-md-4 #[img(src='/static/images/Foto%201.png', width='100%')]
+						div.col-md-4 #[img(src='/static/images/Foto%202.png', width='100%')]
+						div.col-md-4 #[img(src='/static/images/Foto%204.png', width='100%')]
+				
+				div#impresion.row.hidden
+					div.row
+						div.col-md-4.col-md-offset-4
+							div.service-item
+								h2 C
+								br
+								span.fa-stack.fa-4x
+									a(href='#services', onclick="togglerback('serviciostodos');") #[img(src='/static/images/impresora.png', width='100%')]
+								br
+								h4.marg  Producción, impresión y colocación de artes
+					div.row
+						div.col-md-4.col-md-offset-4 #[img(src='/static/images/Impresion.png', width='100%')]
+
+	//- Interactive map
+	section#mapa1.portfolio
+		div.row
+			div.col-md-12
+				div.container
+					div.row
+						div.col-lg-12.text-center
+							h2 Nuestros espectaculares
+							br
+					br
+					div.row
+						div.col-xs-12
+							div#map(style='width: 100%; height: 400px; position: relative; overflow: hidden;')
+							script(defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDckDwRR1uXkcvFI2xOLPKzHuL7XsHh3Nw&callback=initMap")
+					br
+					br
+
+	//- Clients showcase
+	section#clients.mapa.bg-third(style='padding: 30px;')
+		div.container
+			div.row
+				div.col-xs-12.text-center
+					h2 Nuestros clientes
+					hr.small
+					div.my-slider
+						ul
+							li
+								div.col-md-4 #[img(src='/static/images/logos/Bacardi.svg', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/Holiday_Inn.svg', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/itesmnew%20%5BConverted%5D.svg', width='60%')]
+							li
+								div.col-md-4 #[img(src='/static/images/logos/Logo_Hampton_Inn_-by_Hilton-%20%5BConverted%5D.svg', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/palacio.svg', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/peugeot_logo_2013.svg', width='60%')]
+							li
+								div.col-md-4 #[img(src='/static/images/logos/liverpool_logo.svg', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/Logo_CAISA-2.png', width='60%')]
+								div.col-md-4 #[img(src='/static/images/logos/Subway.svg', width='60%')]
+
+	//- Contact form
+	section#contact.services
+		div#contact.content-section-a
+			div.container
+				div.row
+					div.col-md-6.col-md-offset-3.text-center.wrap_title.margencontacto #[h2 Contacto]
+
+					form(action='/contact/', method='POST', role='form')
+						div.col-md-6
+							div.form-group
+								label(for='InputName') Nombre
+								div.input-group
+									input#InputName.form-control(name='InputName', placeholder='Enter Name', required='', type='text')
+									span.input-group-addon
+										i.glyphicon.glyphicon-ok.form-control-feedback
+							div.form-group
+								label(for='InputEmail') Tu email
+								div.input-group
+									input#InputEmail.form-control(name='InputEmail', placeholder='Enter Email', required='', type='email')
+									span.input-group-addon
+										i.glyphicon.glyphicon-ok.form-control-feedback
+							div.form-group
+								label(for='InputMessage') Mensaje
+								div.input-group
+									textarea#InputMessage.form-control(name='InputMessage', required='', rows='5')
+									span.input-group-addon
+										i.glyphicon.glyphicon-ok.form-control-feedback
+							|  
+							input#submit.btn.wow.tada.btn-embossed.btn-primary.pull-right(name='submit', type='submit', value='Manda un correo')
+					hr.featurette-divider.hidden-lg
+					div.col-md-5.col-md-push-1.address
+						address
+
+							- var business = 'https://www.google.com.mx/maps/place/Ciruelos+137,+Fracc.+Jurica,+Jurica+Pinar,+76100+Santiago+de+Quer%C3%A9taro,+Qro./@20.6628727,-100.4427459,17z/data=!3m1!4b1!4m5!3m4!1s0x85d350a0b329908d:0x5d3a8579bc95b0cb!8m2!3d20.6628727!4d-100.4405572';
+
+							h3 Nuestras Oficinas
+							p.lead #[a(href=(business)) Ciruelos #137 Interior 18 El Pinar #[br]  Jurica, Querétaro, Qro. C.P. 76100] #[br]  Tel: 442 183 1219
+
+	//- Page footer
+	footer
+		div.container
+			div.row
+				div.col-xs-10.col-xs-offset-1.text-center
+
+					//- Social network links
+					ul.list-inline
+						li
+							a(href='https://www.facebook.com/garomedios/') #[img(src='/static/images/logos/facebu.svg', width='30%')]
+						li
+							a(href='https://twitter.com/Garoqro') #[img(src='/static/images/logos/tuit.svg', width='30%')]
+						li
+							a(href='https://www.instagram.com/garomedios/') #[img(src='/static/images/logos/insta.svg', width='30%')]
+
+					hr.small
+					p.text-muted Copyright &copy; GARO 2017
+
+		//- "To top" button
+		a#to-top.btn.btn-dark.btn-lg(href='#top', style='display: none; position: fixed;')
+			i.fa.fa-chevron-up.fa-fw.fa-1x
+
+	each ad, index in self.ads
+
+		//- Ad modal
+		div.portfolio-modal.modal.fade(id=`portfolioModal${index + 1}`)
+			section.modal-content
+				div.close-modal(data-dismiss='modal') #[div.lr #[div.rl]]
+				div.row.margentitulomodal
+					h1.h1px #{ad.title}
+
+				div.row
+					div.col-xs-12.hidden-sm.hidden-xs
+						div.col-xs-6 Vista natural
+						div.col-xs-6 Vista cruzada
+
+					each picture in ad.pictures
+						div.col-lg-6
+							img(src=(picture), width='100%')
+
+				div.row
+					div.col-lg-12
+						br
+						p.rojo.text-left !{ad.description}
+						br 
+						a.button(href=(ad.location.url)) Ir allá
+
+	script(src='/static/js/jquery.js')
+	script(src='/static/js/jquery-2.1.1.js')
+	script(src='/static/js/jquery.mixitup.min.js')
+	script(src='/static/js/bootstrap.min.js')
+	script(src='/static/js/main.js')
+	script(src='/static/js/toggler.js')
+	script(src='/static/js/unslider.js')
+	script(src='/static/js/video.js')
+	script(src='/static/js/modals.js')
+
+	- var markers = self.ads.map((ad, id) => ({ 'id': (id + 1), 'lat': ad.location.lat, 'lng': ad.location.lng,  'title': ad.title }));
+
+	script function initMap(){"use strict";let a=[!{markers.map(JSON.stringify).join(',')}];var b=new google.maps.Map(document.getElementById('map'),{zoom:12,center:{lat:20.5923748,lng:-100.2832912},scrollwheel:!1});for(let c of a){let a=new google.maps.Marker({position:{lat:c.lat,lng:c.lng},map:b,icon:"/static/images/spectacular.png",title:c.title});a.addListener("click",function(){$(`#portfolioModal${c.id}`).modal()})}};$(document).ready(function(){$(".my-slider").unslider()});

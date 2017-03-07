@@ -1,0 +1,24 @@
+//- "social.pug"
+
+mixin og-card(type, card)
+	//- Creates an OpenGraph card from a card type and a card payload.
+		See "http://ogp.me/" for more information. See "http://ogp.me/#types"
+		for a complete list of "type" values.
+
+	meta(property='og:type' content=(type))
+	meta(property='og:title' content=(card.title))
+	meta(property='og:image' content=(card.image))
+	meta(property='og:url' content=(card.url))
+	meta(property='og:description' content=(card.description))
+	if card.admin
+		meta(property='fb:admins' content=(card.admin))
+
+mixin tw-card(type, card)
+	//- Creates a Twitter card from a card type and a card payload.
+		See "https://dev.twitter.com/cards/overview" for more information.
+
+	meta(name='twitter:card' content=(type))
+	meta(name='twitter:site' content=(card.admin))
+	meta(name='twitter:title' content=(card.title))
+	meta(name='twitter:description' content=(card.description))
+	meta(name='twitter:image' content=(card.image))
