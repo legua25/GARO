@@ -14,8 +14,8 @@ const Transport = createTransport({
     'secure': true,
     'pool': true,
     'auth': {
-        'user': 'admin@garoqro.com',
-        'pass': '6h52w4a9g23a'
+        'user': 'contacto@garoqro.com',
+        'pass': 'Ext2001'
     }
 } as any);
 
