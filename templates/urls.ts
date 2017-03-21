@@ -53,7 +53,7 @@ export default function urls(router: Router): Router {
 			`,
 			'html': `<div style="width: 100%">
 				<p style="text-align: center; width: 100%">
-					<img src="https://garoqro.com/static/images/logo.svg" alt="Logotipo Asora" style="width: 128px" />
+					<img src="https://garoqro.com/static/images/logo.svg" alt="Logotipo GARO" style="width: 128px" />
 				</p>
 				<h2>Nuevo mensaje de contacto</h2>
 				<p style="width: 100%"><b>${body.name}</b> ha enviado un mensaje:</p>

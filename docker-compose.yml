@@ -5,7 +5,7 @@ services:
     templates:
 
         # Building & tagging
-        image: 'manager.asora.co/templates:garo-1.0.0'
+        image: 'manager.asora.co/garo/templates:1.0.1'
         build: 
             context: './templates'
 
@@ -25,7 +25,7 @@ services:
     server:
 
         # Building & tagging
-        image: 'manager.asora.co/server:garo-1.0.0'
+        image: 'manager.asora.co/garo/server:1.0.1'
         build:
 
             context: './server'
