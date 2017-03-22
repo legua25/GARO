@@ -1,6 +1,6 @@
 //- "index.pug"
-extends ../layout.pug
-include ../social.pug
+extends base/layout.pug
+include base/social.pug
 
 
 //- Social metadata & assets
@@ -17,7 +17,7 @@ block assets
 	link(href='/static/css/reset.css', rel='stylesheet')
 	link(href='/static/css/full-slider.css', rel='stylesheet')
 	link(href='/static/css/stylish-portfolio.css', rel='stylesheet')
-	link(href='/static/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+	link(href='/static/css/font-awesome.min.css', rel='stylesheet', type='text/css')
 	link(href='https://fonts.googleapis.com/css?family=Didact+Gothic', rel='stylesheet')
 	link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
 	link(rel='stylesheet', href='/static/css/unslider.css')
@@ -356,27 +356,4 @@ block content
 		- var markers = self.ads.map((ad, id) => ({ 'id': (id + 1), 'lat': ad.location.lat, 'lng': ad.location.lng,  'title': ad.title }));
 
 		script function initMap(){"use strict";let a=[!{markers.map(JSON.stringify).join(',')}];var b=new google.maps.Map(document.getElementById('map'),{zoom:12,center:{lat:20.5923748,lng:-100.2832912},scrollwheel:!1});for(let c of a){let a=new google.maps.Marker({position:{lat:c.lat,lng:c.lng},map:b,icon:"/static/images/spectacular.png",title:c.title});a.addListener("click",function(){$(`#portfolioModal${c.id}`).modal()})}};$(document).ready(function(){$(".my-slider").unslider()});
-		script.
-			'use strict';
-
-			let module = angular.module('GARO', []);
-			module.controller('ContactController', [ '$scope', '$http', function ($scope, $http) {
-
-				$scope['data'] = {};
-
-				this.submit = function (data) {
-
-					let request = $http.post('/contact/', JSON.stringify(data));
-					function show_success(response) {
-
-						$scope['data'] = {};
-						$("#successmail").fadeIn("slow");
-					}
-
-					function show_error(error) {
-						$("#alertmail").fadeOut("slow");
-					}
-
-					request.then(show_success).catch(show_error);
-				};
-			} ]);
+		script "use strict";let a=angular.module("GARO",[]);a.controller("ContactController",["$scope","$http",function(a,b){a.data={},this.submit=function(c){function e(b){a.data={},$("#successmail").fadeIn("slow")}function f(a){$("#alertmail").fadeOut("slow")}let d=b.post("/contact/",JSON.stringify(c));d.then(e).catch(f)}}]);

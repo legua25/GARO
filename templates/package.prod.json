@@ -1,0 +1,26 @@
+{
+	"name": "template-engine",
+	"author": "Luis Gutiérrez <legua.25@asora.co>",
+	"license": "UNLICENSED",
+	"private": true,
+	
+	"scripts": {
+		"start": "node /srv/server.min.js"
+	},
+	
+	"dependencies": {
+		"core-js": "^2.4.1",
+		"generic-pool": "^3.1.5",
+		"ioredis": "^2.4.3",
+		"js-yaml": "^3.8.2",
+		"koa": "^2.0.0-alpha.7",
+		"koa-body": "^2.0.0",
+		"koa-logger": "^2.0.0",
+		"koa-router": "^7.0.0",
+		"lodash": "^4.16.4",
+		"moment": "^2.15.2",
+		"nodemailer": "^2.7.2",
+		"pug": "^2.0.0-beta6",
+		"request": "^2.79.0"
+	}
+}

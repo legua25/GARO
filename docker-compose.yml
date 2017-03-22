@@ -21,6 +21,7 @@ services:
         # Development volumes
         volumes:
             - './templates/pug:/srv/pug:ro'
+            - './templates/router.js:/srv/router.js:ro'
 
     server:
 
@@ -30,7 +31,7 @@ services:
 
             context: './server'
             args:
-                config: 'default.http'
+                config: 'default.https'
 
         # Runtime settings
         container_name: 'garo-server'

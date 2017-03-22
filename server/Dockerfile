@@ -1,5 +1,5 @@
 # -*- image: "server:1.0.0" -*-
-FROM manager.asora.co/nginx:1.11.6
+FROM manager.asora.co/nginx:1.11.10
 MAINTAINER Luis Gutiérrez <legua.2507@gmail.com>
 
 ARG config='default.conf'

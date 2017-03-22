@@ -1,13 +1,13 @@
-# -*- image: "templates:asora-1.0.0" -*-
-FROM manager.asora.co/template-engine:2.0.2
+# -*- image: "garo/templates:1.0.0" -*-
+FROM manager.asora.co/asora/template-engine:3.0.0-beta
 MAINTAINER Luis Gutiérrez <legua.25@asora.co>
 
-#Load application data to the container
-COPY package.json /srv/package.json
-COPY urls.ts /srv/ts/urls.ts
+# Load application data to the container
+COPY package.prod.json /srv/package.json
+RUN set -ex && npm install
 
-RUN set -ex && npm install && npm run postinstall
-COPY pug /srv/pug
+COPY router.js /srv/router.js
 COPY ads.yml /srv/ads.yml
-EXPOSE 3030
+COPY pug /srv/pug
 
+EXPOSE 3030
