@@ -1,0 +1,101 @@
+// Jakefile
+const { task, desc, namespace, fail } = require('jake');
+const { call, log, fs, file, param, exec, Project } = require('@jake/utils');
+const semver = require('semver');
+
+
+task('init', async () => {
+    // Create this file if unavailable
+    if (fs.file('.project') && !param.bool('force', false)) return;
+
+    // Create empty ".project" file from Python source management
+    const { tool } = await fs.read('pyproject.toml', { process: file.toml() });
+    const { name, version } = tool.poetry;
+
+    // Write created file onto disk
+    log(`Creating .project file...`);
+    const project = await Project.empty(name, version);
+    await project.save();
+});
+
+desc(`Builds and bundles all assets produced by this component.`);
+task('build', [ 'clean' ], async () => {
+    if (!fs.file('.project')) await call('init');
+
+    const project = await Project.read();
+    const { name } = project;
+    const version = semver.clean(param.string('version', project.version));
+    if (semver.gt(version, project.version) || param.bool('force', false)) {
+        log(`Creating new release ${log.info(version)}...`);
+        const pyproject = await fs.read('pyproject.toml', { process: file.toml() });
+
+        pyproject.tool.poetry.version = version;
+        await fs.write('pyproject.toml', pyproject, { process: file.toml() });
+    }
+
+    // Build source distribution for project
+    log(`Building ${log.info(`${name} (version ${version})`)} as Python distributable...`);
+    await exec('poetry build --format sdist', { stdout: 'inherit', stderr: 'inherit' });
+
+    // Update project metadata and tracking
+    await project.release(version, [ `./dist/${name}-${version}.tar.gz` ]);
+    await project.save();
+});
+
+desc(`Cleans all artifacts produced by this component, resetting to a clean slate.`);
+task('clean', async () => {
+    if (!fs.file('.project') || !fs.dir('dist')) return;
+
+    const project = await Project.read();
+
+    log(`Cleaning up project artifacts.`);
+    await fs.delete('dist/**');
+
+    log(`Cleaning up build environment.`);
+    const { image } = project;
+    await exec('docker image', [ 'rm', '-f', ...image.tags ], { stdout: 'inherit', stderr: 'inherit' });
+    await exec('docker system prune', [ '-f', '--volumes' ], { stdout: 'inherit', stderr: 'inherit' });
+
+    await project.release();
+    await project.save();
+});
+
+desc(`Produces a container image from all artifacts produced by this component.`);
+task('package', async () => {
+    // Skip if already available (and not forced)
+    if (!fs.file('.project')) return fail('Project has not been initialized.');
+    if (fs.file('dist/Dockerfile') && !param.bool('force', false)) {
+        return log(
+            log.warn(`Skipped rendering of container specification.\n`) +
+            `If you want to render this item nonetheless, run with force=true instead.`
+        );
+    }
+
+    const project = await Project.read();
+    const { name, version } = project;
+
+    // Render container image specification as Dockerfile
+    const server = project.find(`${name}-${version}.tar.gz`);
+    if (!server) return fail('Failed to locate build artifact.');
+
+    log(`Rendering container image specification for version ${log.info(version)}...`);
+    await fs.render('dist/Dockerfile', 'Dockerfile', {
+        name, version, created: new Date(),
+        artifacts: { server }
+    });
+
+    // Create container images using Docker engine
+    log(`Building container image from specification...`);
+    const { image } = project;
+    const args = [
+        '--no-cache', '--rm', '--squash',
+        ...image.tags.flatMap(tag => [ '-t', tag ]),
+        ...image.labels.flatMap(label => [ '--label', label ]),
+        './dist'
+    ];
+    await exec('docker build', args, { stdout: 'inherit', stderr: 'inherit' });
+
+    // Update project information
+    await project.release();
+    await project.save();
+});

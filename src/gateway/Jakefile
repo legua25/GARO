@@ -1,0 +1,153 @@
+// Jakefile
+const { task, desc, namespace } = require('jake');
+const { call, log, fs, param, exec, Project } = require('@jake/utils');
+
+
+task('init', async () => {
+    // Create this file if unavailable
+    if (fs.file('.project') && !param.bool('force', false)) return;
+
+    // Write created file onto disk
+    log(`Creating .project file...`);
+    const project = await Project.empty('garoqro-gateway', '1.0.0');
+    await project.save();
+});
+
+desc(`Builds and bundles all assets produced by this component.`);
+task('build', [ 'clean' ], async () => {
+    if (!fs.file('.project')) await call('init');
+
+    const project = await Project.read();
+    const { name, version } = project;
+
+    // Build source distribution for project
+    log(`Building ${log.info(`${name} (version ${version})`)} as nginx configuration...`);
+    await fs.copy('nginx.conf', 'dist');
+    await fs.copy('mime-types.conf', 'dist');
+    await fs.copy('default.conf', 'dist');
+
+    // Compile certificate requests and Diffie-Hellman parameters
+    if (!fs.exists('./dist/dhparam.pem')) {
+        process.env['force'] = 'true';
+        await call('build:dhparam');
+    }
+    if (!fs.exists('./dist/default.crt')) {
+        log(`${log.warn(`SSL certificate is missing. Sadly, we cannot automate this process due to provider limitations.`)}`);
+        log(`Issuing new certificate request...`);
+
+        process.env['force'] = 'true';
+        await call('build:request');
+
+        log(`\nHead to "https://www.namecheap.com/" to purchase and activate a new certificate using the generated request.`);
+        log(`Then, run this command again to complete asset registration.`);
+    }
+
+    // Update project metadata and tracking
+    await project.release(version, [
+        './dist/nginx.conf',
+        './dist/mime-types.conf',
+        './dist/default.conf',
+        './dist/dhparam.pem',
+        './dist/default.crt',
+        './dist/default.key'
+    ]);
+    await project.save();
+});
+
+namespace('build', () => {
+    desc(`Calculates new Diffie-Hellman parameters for server security.`);
+    task('dhparam', async () => {
+        if (!fs.file('.project')) return fail('Project has not been initialized.');
+
+        // Compile certificate requests and Diffie-Hellman parameters
+        const project = await Project.read();
+        if (!project.find(({ name }) => name === 'dhparams.pem') || !param.bool('force', false)) {
+            log(`Compiling Diffie-Hellman parameters for server...`);
+            await exec('openssl dhparam', [ '-out', './dist/dhparam.pem', '4096' ], { stdout: 'inherit', stderr: 'inherit' });
+
+            // Update project metadata and tracking
+            await project.release(undefined, [ './dist/dhparam.pem' ]);
+        }
+        await project.save();
+    });
+
+    desc(`Emits a new certificate request from pre-defined parameters.`);
+    task('request', async () => {
+        if (!fs.file('.project')) return fail('Project has not been initialized.');
+
+        // Issue certificate request
+        const project = await Project.read();
+        if (!project.find(({ name }) => name === 'default.key') || !param.bool('force', false)) {
+            log(`Generating new certificate request for "garoqro.com"...`);
+            const args = [
+                '-newkey', 'rsa:2048',
+                '-nodes',
+                '-keyout', './dist/default.key',
+                '-out', './dist/default.csr',
+                '-subj', '/C=MX/ST=Queretaro/L=Queretaro/O=GARO Medios Publicitarios/OU=IT/CN=garoqro.com'
+            ];
+            await exec('openssl req', args, { stdout: 'inherit', stderr: 'inherit' });
+
+            // Update project metadata and tracking
+            await project.release(undefined, [ './dist/default.key' ]);
+        }
+        await project.save();
+    });
+});
+
+desc(`Cleans all artifacts produced by this component, resetting to a clean slate.`);
+task('clean', async () => {
+    if (!fs.file('.project') || !fs.dir('dist')) return;
+
+    const project = await Project.read();
+
+    log(`Cleaning up build environment.`);
+    const { image } = project;
+    await exec('docker image', [ 'rm', '-f', ...image.tags ], { stdout: 'inherit', stderr: 'inherit' });
+    await exec('docker system prune', [ '-f', '--volumes' ], { stdout: 'inherit', stderr: 'inherit' });
+
+    await project.release();
+    await project.save();
+});
+
+desc(`Produces a container image from all artifacts produced by this component.`);
+task('package', async () => {
+    // Skip if already available (and not forced)
+    if (!fs.file('.project')) return fail('Project has not been initialized.');
+    if (fs.file('dist/Dockerfile') && !param.bool('force', false)) {
+        return log(
+            log.warn(`Skipped rendering of container specification.\n`) +
+            `If you want to render this item nonetheless, run with force=true instead.`
+        );
+    }
+
+    const project = await Project.read();
+    const { name, version } = project;
+
+    // Render container image specification as Dockerfile
+    const nginx_conf = project.find('nginx.conf');
+    const mime_types = project.find('mime-types.conf');
+    const default_conf = project.find('default.conf');
+    if (!nginx_conf || !mime_types || !default_conf) return fail('Failed to locate build artifact.');
+
+    log(`Rendering container image specification for version ${log.info(version)}...`);
+    await fs.render('dist/Dockerfile', 'Dockerfile', {
+        name, version, created: new Date(),
+        artifacts: { nginx_conf, mime_types, default_conf }
+    });
+
+    // Create container images using Docker engine
+    log(`Building container image from specification...`);
+    const { image } = project;
+    const args = [
+        '--no-cache', '--rm', '--squash',
+        ...image.tags.flatMap(tag => [ '-t', tag ]),
+        ...image.labels.flatMap(label => [ '--label', label ]),
+        './dist'
+    ];
+    await exec('docker build', args, { stdout: 'inherit', stderr: 'inherit' });
+
+    // Update project information
+    await project.release();
+    await project.save();
+});

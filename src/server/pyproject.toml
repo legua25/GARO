@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "garoqro-server"
+version = "1.0.0"
+description = "Website server for GARO Medios Publicitarios"
+authors = [ "Luis Gutierrez <legua.2507@gmail.com>" ]
+packages = [
+    { include = "app/**/*", from = "src" },
+    { include = "conf/**/*", from = "src" },
+    { include = "manage.py", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dj-database-url = "0.5.0"
+django = {git = "https://github.com/laymonage/django.git", rev = "ticket_12990"}
+djangorestframework = "^3.11.0"
+gunicorn = "^20.0.4"
+python-decouple = "3.3"
+pyyaml = "^5.3"
+requests = "^2.22.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-django = "^3.8"
+hypothesis = {extras = ["django"], version = "^5.5.0"}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

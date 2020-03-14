@@ -1,0 +1,53 @@
+[build]
+name = "garoqro-gateway"
+version = "1.0.0"
+updated = 2020-03-06T06:22:31.468Z
+authors = [ "Luis Gutierrez <legua.2507@gmail.com>" ]
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "nginx.conf"
+path = "dist"
+checksum = "2ec9065514e763ffc93ae7fa090e2bfcac0fd1a1ae650fa441c36762b88761e1"
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "mime-types.conf"
+path = "dist"
+checksum = "2fab94c3e31107520d7e63caddfecdf64e8c473eee2d4e242d092e80d976f451"
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "default.conf"
+path = "dist"
+checksum = "f0c299c1a45138ad3da28b26a29e6bc933368775ad8061a09130b974526c292c"
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "dhparam.pem"
+path = "dist"
+checksum = "a9d3bee5e2e190cd20a0bf32846a60399616683b874767ab532ff89e0c263388"
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "default.crt"
+path = "dist"
+checksum = "77b2719a04802b50f0b378cc2db5f64dba4ddcd971d34c66a6c5e70f27162388"
+
+[[artifact]]
+updated = 2020-03-06T06:22:31.468Z
+name = "default.key"
+path = "dist"
+checksum = "b9cbf05ebe9c6e4fc066ebc3f6030d829797582066b5a4f845547d62c9c3fa28"
+
+[spec]
+tags = [
+  "us.icr.io/garoqro/garoqro-gateway:1.0.0",
+  "us.icr.io/garoqro/garoqro-gateway:latest"
+]
+labels = [
+  "org.opencontainers.image.title=\"garoqro-gateway\"",
+  "org.opencontainers.image.version=\"1.0.0\"",
+  "org.opencontainers.image.authors=\"Luis Gutierrez <legua.2507@gmail.com>\"",
+  "org.opencontainers.image.created=\"2020-03-06T02:16:02.410Z\""
+]

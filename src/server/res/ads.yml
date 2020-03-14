@@ -1,0 +1,183 @@
+# ads.yml
+
+title: Carretera Querétaro-Celaya
+category: AA
+thumbnail: "{host}/static/images/Carretera%20cuota%20celaya%20natural.png"
+description: |
+    - Vista natural: 800m de distancia.<br />
+    - Vista cruzada: 600m de distancia.<br />
+    <strong>Frente a Plaza Esfera y Plaza Galerías</strong>
+latitude: 20.576806
+longitude: -100.408306
+map: "https://goo.gl/maps/9xAFZYpiBjG5bwCD7"
+pictures:
+    - front: "{host}/static/images/Carretera%20cuota%20celaya%20natural.png"
+      cross: "{host}/static/images/Carretera%20cuota%20Celaya%20cruzada.png"
+
+---
+
+title: Autopista México-Querétaro Km. 198 Parque Industrial Finsa RC
+category: A
+thumbnail: "{host}/static/images/Carretera%20Quer%C3%A9taro%20cruzada%20.png"
+description: |
+    - Vista natural: 700m de distancia.<br />
+    - Vista cruzada: 700m de distancia.<br />
+    <strong>* Dentro de Parque Industrial Finsa</strong>
+latitude: 20.5774648
+longitude: -100.2009594
+map: "https://goo.gl/maps/hgEPG7CA9tvSUTZ68"
+pictures:
+    - front: "{host}/static/images/Carretera%20Quer%C3%A9taro%20natural%20.png"
+      cross: "{host}/static/images/Carretera%20Quer%C3%A9taro%20cruzada%20.png"
+
+---
+
+title: Prolongación Zaragoza
+category: AA
+thumbnail: "{host}/static/images/Zaragoza%20cruzada.png"
+description: |
+    - Vista natural: 900m de distancia.<br />
+    - Vista cruzada: 500m en semáforo.<br />
+    <strong>*Cerca del IMSS, Farmacias del Ahorro y escuelas.</strong>
+latitude: 20.580444
+longitude: -100.409778
+map: "https://goo.gl/maps/eu5fzhU5XSxif8M16"
+pictures:
+    - front: "{host}/static/images/Zaragoza%20natural.png"
+      cross: "{host}/static/images/Zaragoza%20cruzada.png"
+    - front: "{host}/static/images/Zaragoza%20natural%20noche.png"
+      cross: "{host}/static/images/Zaragoza%20cruzada%20noche.png"
+
+---
+
+title: Parque Querétaro 2000 INDEREQ
+category: AAA
+thumbnail: "{host}/static/images/PQ2000%20natural%20pueblear.png"
+description: |
+    - Vista natural: 600m de distancia.<br />
+    - Vista cruzada: 400m en distancia.<br />
+    <strong>*Frente a zona comercial (SAM’S, Wallmart, Vips, Costco)</strong>
+latitude: 20.617000
+longitude: -100.396500
+map: "https://goo.gl/maps/Suxw5cakjkzomGqs9"
+pictures:
+    - front: "{host}/static/images/PQ2000%20natural%20pueblear.png"
+      cross: "{host}/static/images/PQ2000%20cruzada.png"
+    - front: "{host}/static/images/PQ2000%20Natural%20noche.png"
+      cross: "{host}/static/images/PQ2000%20noche%20cruzada.png"
+
+---
+
+title: Libramiento Surponiente
+category: AA
+thumbnail: "{host}/static/images/LSP%20natural.png"
+description: |
+    - Vista natural: 1km. de distancia.<br />
+    - Vista cruzada: 1km. en distancia.<br />
+    <strong>*Rodeado de desarrollos inmobiliarios</strong>
+latitude: 20.550194
+longitude: -100.374222
+map: "https://goo.gl/maps/V47y4XbY4a2o94ubA"
+pictures:
+    - front: "{host}/static/images/LSP%20natural.png"
+      cross: "{host}/static/images/LSP%20cruzada.png"
+
+---
+
+title: Álamos
+category: AAA
+thumbnail: "{host}/static/images/alamos.png"
+description: |
+    - Vista natural: 600m. de distancia.<br />
+    - Vista cruzada: 400m. en distancia.<br />
+    <strong>*Frente a Plaza Boulevares, restaurante Nico’s y agencias automotrices.</strong>
+latitude: 20.6114998
+longitude: -100.3849255
+map: "https://goo.gl/maps/2jph2ukU4DuHx55n8"
+pictures:
+    - front: "{host}/static/images/%C3%81lamos%20natural%202.png"
+      cross: "{host}/static/images/alamos.png"
+    - front: "{host}/static/images/%C3%81lamos%20natural%20noche.png"
+      cross: "{host}/static/images/%C3%81lamos%20cruzada%20noche.png"
+
+---
+
+title: Parque Querétaro 2000
+category: AAA
+thumbnail: "{host}/static/images/PQ2000/PQ2000%20natural.png"
+description: |
+    - Vista natural: 900m. de distancia.<br />
+    - Vista cruzada: 300m. en distancia.<br />
+    <strong>*Frente a Plaza del Parque y hotel Fiesta Americana.</strong>
+latitude: 20.617167
+longitude: -100.401361
+map: "https://goo.gl/maps/1TzSWUFvwRp9YTyR6"
+pictures:
+    - front: "{host}/static/images/PQ2000/PQ2000%20natural.png"
+      cross: "{host}/static/images/PQ2000/PQ2000%20cruzada.png"
+    - front: "{host}/static/images/Natural%20noche.png"
+      cross: "{host}/static/images/PQ2000%20cruzada%20noche.png"
+
+---
+
+title: Autopista México-Querétaro Km. 197 La Piedad
+category: A
+thumbnail: "{host}/static/images/Carretera%20Quer%C3%A9taro%202%20natural%20.png"
+description: |
+    - Vista natural: 700m. de distancia.<br />
+    - Vista cruzada: 700m. en distancia.<br />
+    <strong>*Cerca de desarrollos inmobiiarios.</strong>
+latitude: 20.56756
+longitude: -100.2512922
+map: "https://goo.gl/maps/uTG9uDQce5cZvFP37"
+pictures:
+    - front: "{host}/static/images/Carretera%20Quer%C3%A9taro%202%20natural%20.png"
+      cross: "{host}/static/images/Carretera%20Quer%C3%A9taro%202%20cruzada%20.png"
+
+---
+
+title: Autopista México-Querétaro Km. 196 El Colorado
+category: A
+thumbnail: "{host}/static/images/El%20colorado%20natural.png"
+description: |
+    - Vista natural: 500m. de distancia.<br />
+    - Vista cruzada: 1km. en distancia.<br />
+    <strong>*Frente a Parque Industrial El Marqués.</strong>
+latitude: 20.5661716
+longitude: -100.2465773
+map: "https://goo.gl/maps/fgQzqENCxBNK8Y868"
+pictures:
+    - front: "{host}/static/images/El%20colorado%20natural.png"
+      cross: "{host}/static/images/El%20colorado%20cruzada.png"
+
+---
+
+title: Aeropuerto Intercontinental de Querétaro
+category: A
+thumbnail: "{host}/static/images/Aeropuerto%20natural.png"
+description: |
+    - Vista natural: 600m. de distancia.<br />
+    - Vista cruzada: 300m. en distancia.<br />
+    <strong>*A un lado del Aeropuerto Intercontinental de Querétaro.</strong>
+latitude: 20.6068538
+longitude: -100.1467389
+map: "https://goo.gl/maps/DDcWyekX8P8FEZ1z7"
+pictures:
+    - front: "{host}/static/images/MCC_3882.png"
+      cross: "{host}/static/images/Aeropuerto%20natural.png"
+
+---
+
+title: Autopista México-Querétaro Km. 197.5 El Carmen
+category: A
+thumbnail: "{host}/static/images/El%20Carmen%20cruzada.png"
+description: |
+    - Vista natural: 400m. de distancia.<br />
+    - Vista cruzada: 800m. en distancia.<br />
+    <strong>*Frente a Parque Industrial Bernardo Quintana.</strong>
+latitude: 20.571844
+longitude: -100.2728297
+map: "https://goo.gl/maps/VRtz8WeEQmzCUzL7A"
+pictures:
+    - front: "{host}/static/images/El%20carmen%20natural%202.png"
+      cross: "{host}/static/images/El%20Carmen%20cruzada.png"

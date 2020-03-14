@@ -1,0 +1,13 @@
+{
+    "name": "@garoqro",
+    "version": "2.0.0",
+    "author": { "name": "Luis Gutierrez", "email": "legua.2507@gmail.com" },
+    "private": true,
+
+    "peerDependencies": { "pnpm": "^4.8.0" },
+    "dependencies": {
+        "jake": "^10.4.5",
+        "@jake/utils": "workspace:^1.0.0",
+        "semver": "^7.1.3"
+    }
+}

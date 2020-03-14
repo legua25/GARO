@@ -1,0 +1,23 @@
+[build]
+name = "garoqro-server"
+version = "1.0.0"
+updated = 2020-03-06T05:46:58.860Z
+authors = [ "Luis Gutierrez <legua.2507@gmail.com>" ]
+
+[[artifact]]
+updated = 2020-03-06T05:46:58.860Z
+name = "garoqro-server-1.0.0.tar.gz"
+path = "dist"
+checksum = "f146eff30398b48a6de496792c900113cc663355bdadcae5951fbaad2e976909"
+
+[spec]
+tags = [
+  "us.icr.io/garoqro/garoqro-server:1.0.0",
+  "us.icr.io/garoqro/garoqro-server:latest"
+]
+labels = [
+  "org.opencontainers.image.title=\"garoqro-server\"",
+  "org.opencontainers.image.version=\"1.0.0\"",
+  "org.opencontainers.image.authors=\"Luis Gutierrez <legua.2507@gmail.com>\"",
+  "org.opencontainers.image.created=\"2020-02-29T06:58:00.414Z\""
+]
